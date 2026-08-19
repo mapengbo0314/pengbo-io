@@ -59,8 +59,8 @@
 **Phase 3 — Test depth + release safety.** The test suite grows around your real flows — unit, integration, tenant isolation. Migration sync, coordinated deploys, feature flags, smoke tests, observability, and the runbooks, finishing with the witnessed recovery drill: you roll back a broken release yourself, on purpose, before it ever happens for real.
 
 **Phase 4 — Handoff.**
-**You operate everything. We stay only if you want us.**
-Every runbook is written for your team and every gate is yours to tune — no dependency on us baked in. Many founders keep us on for the next phase: a retainer, deeper coverage, new features, scaling work. Your call, either way.
+**You operate everything, with the option to extend.**
+Every runbook is written for your team and every gate is yours to tune — no dependency on us baked in. If you need more after handoff, the engagement extends on your terms: a retainer, deeper coverage, new features, scaling work.
 
 ## WHY US / TEAM
 **Heading:** Who shows up
