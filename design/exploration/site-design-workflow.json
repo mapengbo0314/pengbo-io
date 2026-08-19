@@ -1,0 +1,354 @@
+[
+  {
+    "type": "result",
+    "key": "v2:335422c2578a57f34c6a4626047cafddc7b28362354b626908c39daac7e4472d",
+    "agentId": "adeaa74a5a6c5a1af",
+    "result": {
+      "name": "Pengbo IO — \"The Harness\" design direction",
+      "tagline": "Production readiness for founder-built products.",
+      "heroHeadline": "You shipped a real product. Now make production boring.",
+      "heroSubhead": "You built fast — straight to prod, from main, no net. We install the SDLC Harness around your existing codebase: staging, CI, tests, protected merges, rollback runbooks. Fixed scope, ~12 weeks, and you operate all of it yourself when we leave. You keep founder speed. You lose the 2am risk.",
+      "ctaLabel": "Book a 30-minute intro call",
+      "palette": [
+        {
+          "role": "background (dark, default)",
+          "hex": "#0A0E14"
+        },
+        {
+          "role": "surface (dark) — cards, code blocks",
+          "hex": "#10161F"
+        },
+        {
+          "role": "border (dark) — hairlines, dividers",
+          "hex": "#1F2A37"
+        },
+        {
+          "role": "primary text (dark)",
+          "hex": "#E6EDF3"
+        },
+        {
+          "role": "muted text (dark)",
+          "hex": "#98A6B3"
+        },
+        {
+          "role": "accent — links, focus rings, terminal-green highlights",
+          "hex": "#34D399"
+        },
+        {
+          "role": "accent-contrast — text on accent-filled buttons",
+          "hex": "#04150D"
+        },
+        {
+          "role": "background (light)",
+          "hex": "#F7F9FB"
+        },
+        {
+          "role": "surface (light)",
+          "hex": "#FFFFFF"
+        },
+        {
+          "role": "border (light)",
+          "hex": "#D8DFE6"
+        },
+        {
+          "role": "primary text (light)",
+          "hex": "#101826"
+        },
+        {
+          "role": "muted text (light)",
+          "hex": "#51606F"
+        },
+        {
+          "role": "accent (light mode links/text) — darker green for AA on white",
+          "hex": "#047857"
+        }
+      ],
+      "typography": {
+        "display": "Space Grotesk",
+        "body": "Inter",
+        "mono": "JetBrains Mono"
+      },
+      "tone": "Calm, precise, peer-to-peer. Writes like a senior engineer's runbook, not a marketing site: short declarative sentences, concrete nouns (staging, branch protection, rollback drill), zero hype adjectives. Respects what the founder built — the frame is always \"you shipped fast; we make it safe to keep shipping fast,\" never remediation or rescue. Confidence comes from specificity, not superlatives.",
+      "styleNotes": "LAYOUT: single column, max-w-3xl for prose, max-w-6xl for card grids; sections separated by 96px (py-24) with a 1px full-width border-t in the border color — the page reads as stacked terminal panes, no alternating background stripes. Every section opens with a mono eyebrow label in accent, uppercase, tracking-widest, text-xs, prefixed with a literal \"$ \" or \"## \" (e.g. \"$ diagnostic-week\") — this is the signature motif; use it consistently and nowhere else use decorative mono. BUTTONS: primary = accent bg, accent-contrast text, rounded-md (6px), px-5 py-2.5, font-medium, no gradient, no shadow; hover = 8% lighten via opacity-90; focus-visible = 2px accent ring offset 2px. Secondary = transparent bg, 1px border-color border, primary-text label; hover = surface bg. CTA button label set in body font, not mono. CARDS: surface bg, 1px border, rounded-lg (8px), p-6, NO drop shadows in dark mode (borders do the separation); light mode may add shadow-sm only. Deliverable/checklist cards lead with a mono line like \"[x] branch protection\" in accent. CODE/TERMINAL BLOCKS: one hero-adjacent terminal window (surface bg, border, rounded-lg, three 8px dots in muted, mono text-sm) showing a real artifact — e.g. a passing CI run or a `git push` rejected by branch protection then merged via PR. Static text, no typing animation. TABLES (engagement phases): mono for phase numbers and durations, body font for descriptions, border-b hairlines only. IMAGERY: none — no stock photos, no 3D illustrations, no avatars. The only graphics allowed are inline SVG diagrams drawn with 1px strokes in border/muted colors with accent highlights (e.g. dev→staging→prod pipeline). MOTION: none beyond default hover/focus transitions (150ms). THEMING: dark is default; implement both via Tailwind v4 CSS variables on :root/.dark, swap accent to #047857 for text/links in light mode (keep #34D399 only as fill with #04150D text). TYPE SCALE: Space Grotesk 600 for h1 (text-5xl, tracking-tight) and h2 (text-3xl); Inter 400/500 at text-base/leading-7 for body; JetBrains Mono 400 strictly for eyebrows, code, checklist prefixes, and metrics.",
+      "differentiator": "Terminal aesthetics refined into a brand system, not a costume: one strict monospace motif (the \"$ section-label\" eyebrow + checklist prefixes) carries the entire engineering signal, so the page feels like a tool written by people who live in production rather than an agency imitating one. The proof artifacts are real (a rejected direct push, a green CI run) instead of abstract illustrations, and the restraint itself — no shadows, no motion, no stock imagery, hairline borders only — is the credibility argument: a site that looks like a well-kept repo, in both dark and light."
+    }
+  },
+  {
+    "type": "result",
+    "key": "v2:078d36a4c6fe95b32f7b434b76264cea8ccc42e37c9c4c340140e71411bbe731",
+    "agentId": "a44a6d9cfe102cbbb",
+    "result": {
+      "name": "Pengbo IO",
+      "tagline": "Senior engineering discipline for founder-built products.",
+      "heroHeadline": "Your product is real. Your release process is you.",
+      "heroSubhead": "You shipped fast — straight to prod, from main, everything in your head. Pengbo IO installs the SDLC Harness around what you built: staging, CI, tests, protected merges, and rehearsed rollbacks. About twelve weeks, fixed scope, then we hand you the keys. You keep founder speed; production stops depending on your memory.",
+      "ctaLabel": "Book a 30-minute intro call",
+      "palette": [
+        {
+          "role": "background",
+          "hex": "#FAF9F6"
+        },
+        {
+          "role": "surface",
+          "hex": "#FFFFFF"
+        },
+        {
+          "role": "primary-text",
+          "hex": "#1A1A18"
+        },
+        {
+          "role": "muted-text",
+          "hex": "#5C5A55"
+        },
+        {
+          "role": "accent",
+          "hex": "#1F3A5F"
+        },
+        {
+          "role": "accent-contrast",
+          "hex": "#FAF9F6"
+        },
+        {
+          "role": "border",
+          "hex": "#E4E1DA"
+        },
+        {
+          "role": "accent-hover",
+          "hex": "#16293F"
+        },
+        {
+          "role": "dark-background",
+          "hex": "#161511"
+        },
+        {
+          "role": "dark-surface",
+          "hex": "#201F1A"
+        },
+        {
+          "role": "dark-primary-text",
+          "hex": "#EDEAE3"
+        },
+        {
+          "role": "dark-muted-text",
+          "hex": "#A5A198"
+        },
+        {
+          "role": "dark-accent",
+          "hex": "#A9C3E4"
+        },
+        {
+          "role": "dark-accent-contrast",
+          "hex": "#161511"
+        },
+        {
+          "role": "dark-border",
+          "hex": "#33322C"
+        }
+      ],
+      "typography": {
+        "display": "Fraunces",
+        "body": "Inter",
+        "mono": "IBM Plex Mono"
+      },
+      "tone": "Assured, editorial, engineer-to-engineer. Calm authority, zero hype: concrete nouns (staging, CI, rollback runbook) instead of marketing abstractions. Respects what the founder built — never scolds, never says \"vibe coding\". Reads like a well-written engineering memo from a senior partner: long sentences allowed, every claim specific, prices and names absent by design.",
+      "styleNotes": "LAYOUT: single prose column, max-w-[68ch] for body sections, max-w-5xl for the hero and any diagram; sections separated by py-24 (mobile) / py-32 (desktop) with a 1px full-width hairline in `border` color between major sections — whitespace and hairlines do the structure, not background color blocks. Left-align everything including the hero; no centered marketing layouts. TYPE: Fraunces for h1–h3 only — hero h1 at text-5xl/md:text-7xl, font-weight 560 (variable axis), optical size auto, SOFT=0 WONK=0, tracking -0.015em, line-height 1.05; section h2 at text-3xl/4xl weight 500. Inter 18px/1.7 for body, muted-text for paragraphs, primary-text for leads. IBM Plex Mono 13px uppercase tracking-[0.08em] for eyebrows: each section opens with a mono eyebrow like \"01 — DIAGNOSTIC WEEK\" in accent color. BUTTONS: primary CTA = accent bg, accent-contrast text, rounded-md (6px), px-6 py-3, no gradient, no shadow; hover = accent-hover; visible 2px focus ring in accent offset 2px. Secondary = transparent, 1px border in `border`, primary-text label. CARDS (the harness checklist, the 3 phases): surface bg, 1px `border`, rounded-lg (8px), p-6, no shadow in light mode, shadow-none dark; title in Fraunces 20px, body in Inter 15px muted. Deliverables render as a two-column mono checklist with small \"✓\"-less square markers (2px accent squares), not icon soup. IMAGERY: no photos, no illustrations, no gradients — the only graphics are thin 1px-stroke schematic diagrams (dev → staging → prod pipeline, PR gate flow) drawn in currentColor so they invert cleanly, and one small code-styled artifact (a fake CI status block) set in Plex Mono on surface with `border`. DARK MODE: swap tokens per palette (warm near-black, lighter accent for links/text on dark; dark-mode CTA uses dark-accent bg with dark-accent-contrast text); implement as CSS variables consumed by Tailwind v4 @theme, toggled via prefers-color-scheme only — no JS toggle. ACCESSIBILITY: all pairs above are AA-verified (muted-on-bg 6.5:1, accent-on-bg 10.9:1, dark muted 7.8:1); underline links in body copy; min tap target 44px.",
+      "differentiator": "McKinsey-for-code, literally executed: warm-paper editorial surfaces, Fraunces serif authority, ink-navy restraint, and schematic line diagrams — the visual opposite of the neon-gradient dev-tool template, signaling to a founder making a real financial decision that senior judgment, not a growth funnel, is on the other side of the call."
+    }
+  },
+  {
+    "type": "result",
+    "key": "v2:ca5aa6b773ac4af76e429d1d99fa0e2f67f38e11fdf61e808e21f40ca13b4ba3",
+    "agentId": "a65b3e5ae413a79ec",
+    "result": {
+      "name": "Pengbo IO — SDLC Harness",
+      "tagline": "Keep founder speed. Lose production risk.",
+      "heroHeadline": "You shipped fast. We make it safe to keep shipping fast.",
+      "heroSubhead": "You built a real product at founder speed — straight from main to prod, releases living in your head. We install the SDLC Harness around what you already have: staging, PR-gated merges with AI + human review, CI, real tests, migration sync, and a rollback runbook you've actually rehearsed. One diagnostic week, a fixed-scope ~12-week build, then your team runs it all without us.",
+      "ctaLabel": "Book a 30-min intro call",
+      "palette": [
+        {
+          "role": "background (light)",
+          "hex": "#FFFFFF"
+        },
+        {
+          "role": "surface (light) — cards, code blocks, alt sections",
+          "hex": "#F7F8FA"
+        },
+        {
+          "role": "primary text (light) — 17.8:1 on background",
+          "hex": "#0E1116"
+        },
+        {
+          "role": "muted text (light) — 7.6:1 on background, 7.0:1 on surface",
+          "hex": "#475569"
+        },
+        {
+          "role": "border (light) — hairlines, card strokes",
+          "hex": "#E5E7EB"
+        },
+        {
+          "role": "accent — buttons, links, focus rings (both modes for solid fills)",
+          "hex": "#4F46E5"
+        },
+        {
+          "role": "accent-contrast — text on accent, 6.3:1",
+          "hex": "#FFFFFF"
+        },
+        {
+          "role": "background (dark)",
+          "hex": "#0B0D12"
+        },
+        {
+          "role": "surface (dark) — cards, code blocks",
+          "hex": "#14171F"
+        },
+        {
+          "role": "primary text (dark) — 17.6:1 on background",
+          "hex": "#F2F4F8"
+        },
+        {
+          "role": "muted text (dark) — 7.6:1 on background, 7.0:1 on surface",
+          "hex": "#94A3B8"
+        },
+        {
+          "role": "border (dark)",
+          "hex": "#262B36"
+        },
+        {
+          "role": "accent text (dark) — links/inline accent on dark bg, 6.5:1",
+          "hex": "#818CF8"
+        },
+        {
+          "role": "success (light) — checklist ticks, 'passing' states",
+          "hex": "#047857"
+        },
+        {
+          "role": "success (dark) — checklist ticks, 'passing' states, 9.1:1 on dark bg",
+          "hex": "#34D399"
+        }
+      ],
+      "typography": {
+        "display": "Inter (weights 600–700, letter-spacing -0.02em to -0.03em at hero sizes; use 'Inter Tight' variant name on Google Fonts if you want extra-condensed headlines, otherwise plain Inter is correct)",
+        "body": "Inter (400 body at 16–17px/1.65, 500 for UI labels and nav)",
+        "mono": "JetBrains Mono (400/500 — inline code, terminal snippets, phase numbers, stat figures like '3 envs · 12 weeks · 1 drill')"
+      },
+      "tone": "Peer-to-peer senior engineer. Calm, precise, concrete — names the exact artifacts (staging, branch protection, RLS tests, rollback runbook) instead of promising 'best practices'. Respects what the founder built: never shames the shortcut, frames it as the correct tradeoff whose time is up. Zero fear-mongering, zero exclamation marks, no marketing superlatives. Reads like a well-written engineering RFC that happens to sell something.",
+      "styleNotes": "LAYOUT & RHYTHM: single column, max-w-5xl (64rem) content well, max-w-2xl for prose blocks. Section padding py-24 desktop / py-16 mobile; sections alternate background↔surface with a 1px full-width border between (border color token) — no wavy dividers. 12-col grid inside sections; cards in 3-up (lg), 1-up (mobile). Nav: sticky, h-14, background at 80% opacity + backdrop-blur-md, 1px bottom border, wordmark left ('Pengbo IO' in Inter 600), single accent CTA button right — no menu bloat.\n\nHERO: left-aligned, not centered. Eyebrow line in JetBrains Mono 500, 13px, uppercase, tracking-widest, muted color: 'SDLC HARNESS — FOR FOUNDER-BUILT PRODUCTS'. Headline text-5xl/6xl Inter 700 tracking-tight, primary text. Subhead text-lg muted, max-w-2xl. Two buttons: primary accent + secondary ghost ('See the 12-week plan' anchor link). Behind hero: one subtle radial gradient only — radial-gradient at top center, accent at 8% opacity (light) / 14% (dark) fading to transparent by 60% radius; plus an optional faint 1px grid pattern (border color at 40% opacity, 32px cells) masked to fade out below the fold. Nothing animated except a slow 8s opacity pulse on the gradient if desired.\n\nBUTTONS: primary — bg accent #4F46E5, white text, h-11, px-5, rounded-lg (8px), font-medium 15px, no gradient fill; hover darkens to #4338CA; focus-visible ring-2 ring-accent ring-offset-2 (offset color = current background). Secondary — transparent bg, 1px border (border token), primary-text label, same metrics; hover bg surface. Never more than one primary button visible per viewport.\n\nCARDS: bg surface, 1px border (border token), rounded-xl (12px), p-6. Shadow only on light mode and only subtle: shadow-sm; dark mode relies on border + surface delta, no shadow. Hover on interactive cards: border-color shifts toward accent at 40% opacity, translate-y-0 (no lift animations). Each offer-item card: 20px lucide-style stroke icon in accent (light) / #818CF8 (dark), 16px title Inter 600, 2-line muted description. The 'harness checklist' (env separation, branch protection, CI, tests, migrations, deploys, runbooks, drill, flags, observability) renders as a 2-col checklist with success-color check icons, mono labels.\n\nCODE/TERMINAL MOTIF: one hero-adjacent or mid-page terminal card — bg #14171F in BOTH modes (a dark code block on the light page is intentional, very Stripe), rounded-xl, 1px border #262B36, JetBrains Mono 13px, fake prompt lines like `$ git push origin main → ✗ blocked: PR required` then `✓ ci: typecheck · lint · build` `✓ tests: unit · integration · rls` `✓ deploy: staging → prod`. Use success green for ✓, muted for prompt. This is the only illustration on the page — no stock photos, no 3D blobs, no dashboard screenshots.\n\nTIMELINE (engagement shape): horizontal 4-step rail on desktop (Diagnostic week → Phase 1 → Phase 2/3 → Handoff), vertical on mobile. Step numbers in JetBrains Mono inside 32px circles: 1px border, surface bg; connecting 1px line in border color; active/hover circle border in accent. Under 'Handoff', explicitly style the closing state: 'you operate everything — we leave' in primary text, not muted; it is the differentiator, treat it typographically as a headline moment.\n\nDARK MODE: implement via CSS custom properties on :root / .dark (Tailwind v4 @theme tokens), never per-component overrides. Accent solid fills stay #4F46E5 in both modes (white text passes AA); accent-colored TEXT switches to #818CF8 on dark. Test both modes against the border tokens — hairlines must stay visible but quiet.\n\nMICRO-DETAILS: selection color accent at 20%; links underlined with underline-offset-4, decoration-1, muted decoration color that becomes accent on hover; numbers/stats always in mono; footer minimal — wordmark, 'Pengbo IO LLC', cal.com CTA repeated as text link. No client names, no prices, no logos wall anywhere.",
+      "differentiator": "Built to leave: a small senior team (2 senior engineers + 1 senior architect) installs a fixed-scope harness in ~12 weeks, runs a witnessed rollback drill with you, and hands everything off so your team operates it independently — no retainers, no bodies-for-hours, and every gate is designed to preserve the shipping speed that got you here, not bureaucratize it."
+    }
+  },
+  {
+    "type": "result",
+    "key": "v2:9c4aa56e0ed32180eb40a81e4ce41578639ee81170f1617e8ba0616dfff2fae5",
+    "agentId": "a45dffff93ea65831",
+    "result": {
+      "rankings": [
+        {
+          "direction": "Pengbo IO — \"The Harness\" design direction",
+          "score": 8.5,
+          "why": "Best trust-per-pixel for a skeptical technical founder. 'Now make production boring' is exactly what someone who's been paged at 2am wants to hear, and the proof artifacts (a rejected direct push, a green CI run) are the kind of evidence I'd actually believe over any testimonial. The single disciplined mono motif plus no-shadow/no-motion restraint reads as 'people who live in a well-kept repo,' which is the whole sale. Deductions: dark-terminal is the most saturated aesthetic in dev-land right now (every YC dev-tool ships this), so it flirts with costume; and dark-by-default is a mild conversion risk for daytime email-click traffic. It survives because the motif is strict and the copy carries specificity the visuals don't have to."
+        },
+        {
+          "direction": "Pengbo IO (editorial / Fraunces)",
+          "score": 7.5,
+          "why": "Sharpest single line of the three — 'Your product is real. Your release process is you.' names my secret fear in nine words. The warm-paper editorial look is genuinely anti-template and its accessibility rigor (documented ratios, currentColor diagrams, 44px targets) is real craft. But the serif-memo 'McKinsey-for-code' frame is a positioning gamble with this exact buyer: solo technical founders are often consultant-allergic, and Fraunces authority can read as 'people who bill for slides' before the mono eyebrows and CI artifact rescue it. It builds respect; the terminal direction builds recognition — and recognition converts faster with peers."
+        },
+        {
+          "direction": "Pengbo IO — SDLC Harness (Stripe-like)",
+          "score": 6,
+          "why": "Strongest copy system and the best business articulation ('built to leave', the Handoff styled as a headline moment, the 3-envs·12-weeks·1-drill stat line), plus the most production-ready spec (verified contrast pairs, one-primary-button rule). But visually it fails the lens's explicit test: Inter + indigo #4F46E5 (literally Tailwind's default accent) + radial gradient + faint grid + sticky blurred nav is the composite sketch of a SaaS template. A skeptical founder pattern-matches this to a growth funnel in under a second, which taxes every claim on the page no matter how good the words are."
+        }
+      ],
+      "winner": "Pengbo IO — \"The Harness\" design direction",
+      "graftIdeas": [
+        "From the Stripe-like direction: style the Handoff step as a typographic headline moment — 'you operate everything — we leave' in primary text, not muted. 'Built to leave' is the strongest trust argument against agency lock-in fear and The Harness buries it in the subhead.",
+        "From the Stripe-like direction: lift the exact terminal script line-for-line — `$ git push origin main → ✗ blocked: PR required`, then `✓ ci: typecheck · lint · build`, `✓ tests: unit · integration · rls`, `✓ deploy: staging → prod`. It's more concrete than The Harness's looser description of the same artifact, and the RLS line quietly proves multi-tenant fluency.",
+        "From the editorial direction: the headline 'Your product is real. Your release process is you.' — use it as the opening line of the problem section even if the hero stays 'make production boring'. It's the best diagnosis on any of the three pages.",
+        "From the Stripe-like direction: the 'never more than one primary button per viewport' rule plus a secondary ghost CTA anchoring to 'See the 12-week plan' — skeptics who won't book yet need a non-committal next click.",
+        "From the editorial direction: document AA contrast ratios per token pair in the spec (its palette annotates 6.5:1/10.9:1 per pairing) and draw all schematic diagrams in currentColor with 1px strokes so they invert cleanly across modes.",
+        "From the Stripe-like direction: mono stat line '3 envs · 12 weeks · 1 drill' as a compact hero-adjacent proof strip, and keeping the terminal card dark-surfaced in BOTH themes so the artifact always looks like a real terminal.",
+        "From the editorial direction: max-w-[68ch] measure for prose sections and a fully left-aligned hero — reinforces the 'engineering memo, not marketing page' read within The Harness's terminal frame."
+      ]
+    }
+  },
+  {
+    "type": "result",
+    "key": "v2:4e66cc374e2c27e76bca557dcee2d27b9377f12bf8f99133e1dfbc69ac6670ab",
+    "agentId": "a13f9d73950693206",
+    "result": {
+      "rankings": [
+        {
+          "direction": "Pengbo IO (editorial / \"McKinsey-for-code\" direction, Fraunces + warm paper + ink navy)",
+          "score": 8.5,
+          "why": "Maximum differentiation with credibility intact: the visual opposite of the neon dev-tool template signals expensive senior judgment to a founder making a real purchase decision. Engineering signal is carried by substance (Plex Mono eyebrows like '01 — DIAGNOSTIC WEEK', currentColor 1px schematic diagrams, a CI artifact block, memo-grade copy) rather than terminal costume. Sits in the Stripe-Press/Oxide credibility register. Only risk: Fraunces is fashionable with design studios, so execution must keep the diagrams and mono elements prominent to stay unmistakably an engineering firm."
+        },
+        {
+          "direction": "Pengbo IO — \"The Harness\" (dark terminal, Space Grotesk, green accent)",
+          "score": 7.5,
+          "why": "Highest raw production-engineering signal — the '$ section-label' eyebrow motif and real proof artifacts (a git push rejected by branch protection, a green CI run) are genuinely credible, and the no-shadow/no-motion restraint is disciplined. But dark-bg + terminal-green (#34D399) is the most crowded genre in dev branding; it reads 'YC devtool product' more than 'senior consultancy', and dark-as-default plus light-mode-as-afterthought slightly product-ifies a services firm. Distinct within consultancies, generic within its own aesthetic genre."
+        },
+        {
+          "direction": "Pengbo IO — SDLC Harness (white + indigo #4F46E5, Inter-only, Stripe-style)",
+          "score": 5,
+          "why": "Best copy of the three (RFC tone, 'You shipped fast. We make it safe to keep shipping fast.') and the most rigorous spec — per-token AA contrast ratios, disciplined button rules, the handoff-as-headline moment. But Tailwind-default indigo + Inter everywhere + radial hero gradient + lucide icon cards + backdrop-blur sticky nav is the exact generic SaaS template the lens penalizes. As a visual identity it is competent and invisible; nothing about it says this firm rather than any firm."
+        }
+      ],
+      "winner": "Pengbo IO (editorial / \"McKinsey-for-code\" direction, Fraunces + warm paper + ink navy)",
+      "graftIdeas": [
+        "From \"The Harness\": the proof-artifact terminal block showing a real rejected direct push then a PR merge — proof-as-illustration is the strongest credibility device in any of the three; render it as the winner's single code-styled artifact instead of a generic fake CI status.",
+        "From \"The Harness\": '[x] branch protection'-style mono checklist prefixes for the deliverables list — more evocative of a living repo than the winner's plain 2px accent squares.",
+        "From \"The Harness\": the explicit restraint rules as brand law — no drop shadows, no motion beyond 150ms hover/focus, hairline borders do all separation — worth codifying verbatim in the winner's spec.",
+        "From SDLC Harness: the hero headline 'You shipped fast. We make it safe to keep shipping fast.' — tighter and more benefit-forward than the winner's 'Your product is real. Your release process is you.'; A/B or swap.",
+        "From SDLC Harness: style the Handoff step as a typographic headline moment ('you operate everything — we leave') in primary text, not muted — it is the business differentiator and deserves visual weight.",
+        "From SDLC Harness: document AA contrast ratios per token pair directly in the palette spec (e.g. 'muted text — 7.6:1 on background') so accessibility survives implementation.",
+        "From SDLC Harness: the mono stat line pattern '3 envs · 12 weeks · 1 drill' — a compact, memorable engagement summary for the hero or footer.",
+        "From SDLC Harness: the exact terminal script lines ('$ git push origin main → ✗ blocked: PR required', '✓ ci: typecheck · lint · build', '✓ tests: unit · integration · rls') as the content of the artifact block — concrete and true to the offer."
+      ]
+    }
+  },
+  {
+    "type": "result",
+    "key": "v2:8be684f4f86bc7479a0ffadbfda18d40d44a53ac07a02ec7bf7bf1e0e87e8e66",
+    "agentId": "aa3c8ee45bcb5641a",
+    "result": {
+      "rankings": [
+        {
+          "direction": "Pengbo IO (editorial Fraunces, direction 2)",
+          "score": 9,
+          "why": "Cheapest to build and slowest to date. Zero gradients, zero blur, zero JS (prefers-color-scheme only), no imagery, currentColor SVG diagrams that invert in dark mode for free — the whole page is tokens, hairlines, and type. All contrast pairs verified passing AA (muted 6.54:1, accent 10.91:1, dark muted 7.09:1). Editorial serif + warm paper + ink navy is the one aesthetic here that opposes the current dev-tool template, so it reads 'senior partner' in 2028 the same as today. Only fuss: Fraunces variable axes (weight 560, SOFT/WONK) need a correct Google Fonts URL, and the degradation path (plain 500/600) is harmless."
+        },
+        {
+          "direction": "Pengbo IO — SDLC Harness (Inter/indigo Stripe-like, direction 3)",
+          "score": 8,
+          "why": "Most implementation-ready spec of the three — contrast ratios pre-annotated on the tokens and all verified accurate, explicit :root/.dark @theme strategy, responsive timeline spec, dark terminal card kept dark in both modes so it's themed once. Everything is stock Tailwind. Deductions are longevity, not buildability: Inter + indigo-600 + radial glow + backdrop-blur nav is the 2021–2025 dev-tool default and exactly what AI-generated landing pages emit, which is a bad signal for a consultancy selling judgment to founders of AI-built products. The grid pattern + masked gradient + optional pulse are mild fragility, though all cuttable."
+        },
+        {
+          "direction": "Pengbo IO — The Harness (terminal dark-default, direction 1)",
+          "score": 7,
+          "why": "Buildable and admirably restrained (no shadows, no motion, no imagery), and every palette pair passes AA including the tricky green swap (#047857 at 5.48:1 on white). But it carries the most build and longevity risk: dark-as-default means designing two first-class themes with an asymmetric accent rule (green as fill vs darker green as text), terminal aesthetics in light mode reliably look like an afterthought, the '$ ' / '## ' / '[x]' literals are screen-reader noise needing aria-hidden cleanup everywhere, and green-on-near-black terminal chic is the most trend-bound style of the three."
+        }
+      ],
+      "winner": "Pengbo IO (editorial Fraunces, direction 2)",
+      "graftIdeas": [
+        "From direction 3: keep the terminal/CI artifact card dark (#14171F) in BOTH color modes — it's themed once, always passes contrast, and the dark-code-block-on-light-page look is timeless (Stripe pattern).",
+        "From direction 1: make the terminal artifact show a real story, not decoration — `$ git push origin main → ✗ blocked: PR required` followed by green CI checks and a PR merge. That single block is the whole sales pitch rendered as proof.",
+        "From direction 3: annotate every palette token with its verified contrast ratio in the code comments/@theme block, so future edits can't silently break AA.",
+        "From direction 3: treat the Handoff step as a typographic headline moment ('you operate everything — we leave' in primary text, not muted) — it's the differentiator and costs nothing to build.",
+        "From direction 3: the horizontal-desktop / vertical-mobile 4-step engagement rail with mono numbers in bordered circles — a fully specified, image-free timeline that drops straight into direction 2's hairline aesthetic.",
+        "From direction 3: 'never more than one primary button visible per viewport' — a cheap discipline rule that keeps the page from drifting into funnel-speak over time.",
+        "From direction 1: the no-shadows-in-dark-mode rule (borders + surface delta do all separation) — avoids the muddy dark-mode shadow problem entirely.",
+        "From direction 1: strict single-motif mono discipline — monospace appears only in eyebrows, code, and metrics, nowhere decorative; pair with direction 2's numbered '01 — DIAGNOSTIC WEEK' eyebrows.",
+        "From direction 3: mono stat line pattern for credibility numbers ('3 envs · 12 weeks · 1 drill') — concrete, image-free, and ages well."
+      ]
+    }
+  },
+  {
+    "type": "result",
+    "key": "v2:197dfcdb4001474fdf1120308b815c7ad2e2a6b34331d2ea874382b6cd3e6911",
+    "agentId": "aef05511a63f8fcfe",
+    "result": {
+      "designBrief": "# Pengbo IO — Landing Page Design Brief (Final)\n\n## Chosen direction: Editorial / \"McKinsey-for-code\" (Fraunces + warm paper + ink navy)\n\n**Why this wins.** Two of three judges (differentiation lens, buildability lens) picked it; the conversion judge ranked it a close second. It is the visual opposite of the neon dev-tool template — which is exactly the right signal to a founder making a real financial decision about senior judgment. It is also the cheapest and most durable build: no gradients, no blur, no JS beyond nothing, currentColor diagrams that invert for free, all token pairs verified AA. The conversion judge's worry (\"consultant-allergic founders\") is neutralized by grafting the terminal direction's proof artifacts and mono discipline: the page reads as an engineering memo with a real terminal in it, not a deck.\n\n**Grafts adopted from the other two directions (per judge consensus):**\n1. The dark terminal proof-artifact card, dark in BOTH modes, with the exact script lines (rejected push → CI → RLS tests → deploy).\n2. Hero headline swapped to \"You shipped fast. We make it safe to keep shipping fast.\" The editorial line \"Your product is real. Your release process is you.\" opens the problem section.\n3. Handoff styled as a typographic headline moment: \"You operate everything. We leave.\"\n4. Mono stat line \"3 envs · 12 weeks · 1 drill\" as a hero-adjacent proof strip.\n5. `[x] branch protection`-style mono prefixes on the deliverables checklist (aria-hidden, see a11y).\n6. Horizontal-desktop / vertical-mobile 4-step engagement rail with mono numbers in bordered circles.\n7. Never more than one primary button visible per viewport; secondary ghost CTA anchors to \"#plan\".\n8. Restraint as brand law: no drop shadows anywhere, no motion beyond 150ms hover/focus transitions, hairline borders do all separation.\n9. AA contrast ratios annotated on every token (below) and kept as comments in the `@theme` block.\n\n---\n\n## Palette (CSS-ready, ratios verified)\n\n### Light mode (default, `:root`)\n| Role | Hex | Contrast |\n|---|---|---|\n| bg | `#FAF9F6` | — |\n| surface (cards) | `#FFFFFF` | — |\n| text | `#1A1A18` | 16.55:1 on bg |\n| muted | `#5C5A55` | 6.54:1 on bg, 6.89:1 on surface |\n| accent (ink navy — links, eyebrows, CTA fill) | `#1F3A5F` | 10.91:1 on bg |\n| accent-hover | `#16293F` | — |\n| accent-contrast (text on accent) | `#FAF9F6` | 10.91:1 on accent |\n| border (hairlines) | `#E4E1DA` | decorative only |\n\n### Dark mode (`prefers-color-scheme: dark`, no JS toggle)\n| Role | Hex | Contrast |\n|---|---|---|\n| bg | `#161511` | — |\n| surface | `#201F1A` | — |\n| text | `#EDEAE3` | 15.21:1 on bg |\n| muted | `#A5A198` | 7.09:1 on bg, 6.41:1 on surface |\n| accent (pale slate-blue) | `#A9C3E4` | 10.1:1 on bg |\n| accent-hover | `#C2D5EC` | — |\n| accent-contrast (text on accent CTA) | `#161511` | 10.1:1 on accent |\n| border | `#33322C` | decorative only |\n\n### Terminal card (identical in BOTH modes — themed once)\n| Role | Hex | Contrast |\n|---|---|---|\n| terminal bg | `#14171F` | — |\n| terminal border | `#262B36` | — |\n| terminal primary text | `#F2F4F8` | 16.27:1 |\n| terminal muted/prompt | `#94A3B8` | 6.99:1 |\n| success green (✓ lines) | `#34D399` | 9.32:1 |\n| failure red (✗ line) | `#F87171` | 7.0:1 |\n\nImplement all tokens as Tailwind v4 `@theme` CSS variables on `:root` with a `@media (prefers-color-scheme: dark)` override block. Keep the ratio comments next to each variable so future edits can't silently break AA.\n\n## Typography (Google Fonts)\n- **Display: Fraunces** (variable; opsz + wght axes). h1 `text-5xl md:text-7xl`, weight 560 (static fallback 600), tracking `-0.015em`, line-height 1.05. h2 `text-3xl md:text-4xl`, weight 500. Fraunces for h1–h3 only — never body, never UI.\n- **Body: Inter.** 18px/1.7 (`text-lg leading-relaxed`) paragraphs in muted; lead paragraphs in text. 400 body, 500 for nav/UI labels/buttons.\n- **Mono: IBM Plex Mono.** 400/500. Strictly limited to: numbered eyebrows, the terminal card, checklist prefixes, phase numbers, and the stat line. Nowhere decorative beyond these — single-motif discipline.\n- Eyebrow spec (the signature motif): IBM Plex Mono 500, 13px, uppercase, `tracking-[0.08em]`, accent color, format `01 — DIAGNOSTIC WEEK`. Every section opens with one.\n\n## Layout, spacing, radius, borders\n- Single prose column: `max-w-[68ch]` for body sections; `max-w-5xl` for hero, terminal card, card grids, rail. Everything left-aligned including the hero — no centered marketing layouts.\n- Section rhythm: `py-24` mobile / `py-32` desktop; 1px full-width `border-t` hairline between major sections. No background color blocks, no alternating stripes — whitespace and hairlines do the structure.\n- Radius: 6px (`rounded-md`) buttons, 8px (`rounded-lg`) cards, 12px (`rounded-xl`) terminal card only.\n- Shadows: none, either mode. Motion: none beyond 150ms color/border transitions on hover/focus. Imagery: no photos, no illustrations, no icon packs. Only graphics permitted: 1px-stroke schematic SVGs (dev → staging → prod; PR gate flow) drawn in `currentColor` so they invert cleanly, and the one terminal card.\n- Links in body copy: underlined, `underline-offset-4 decoration-1`, decoration muted → accent on hover. Selection: accent at 20%. Min tap target 44px.\n\n## Per-component specs\n\n**Nav.** Static (not sticky), `h-16`, bg = page bg, 1px bottom hairline. Left: \"Pengbo IO\" wordmark in Fraunces 500, 20px. Right: text links (The problem, What we install, The plan, FAQ) in Inter 500 15px muted → text on hover, plus one primary button \"Book intro call\". Mobile: wordmark + button only, links collapse away (anchor page, no hamburger needed).\n\n**Hero.** Left-aligned, `max-w-5xl`, `pt-24 pb-16`. Eyebrow: `SDLC HARNESS — FOR FOUNDER-BUILT PRODUCTS`. h1 in Fraunces per type spec. Subhead Inter 18–20px muted, `max-w-[60ch]`. Button row: primary + secondary ghost (\"See the 12-week plan\" → `#plan`). Below buttons, the mono stat strip: `3 envs · 12 weeks · 1 drill · 0 retainers` — IBM Plex Mono 400 14px, muted, interpuncts in border color. Terminal card sits directly under the hero (or right column ≥ lg): terminal bg `#14171F` both modes, `rounded-xl`, 1px `#262B36` border, three 8px dots in `#94A3B8` at 40%, IBM Plex Mono 13px/1.8, content exactly:\n```\n$ git push origin main\n✗ blocked: PR required — branch protection on main\n$ gh pr create → #214 \"checkout: retry failed webhooks\"\n● ai-review   passed · 1 comment resolved\n● human-review approved — senior engineer\n✓ ci: typecheck · lint · build\n✓ tests: unit · integration · rls\n✓ deploy: staging → smoke → prod\n```\n`✗` line in `#F87171`, `✓` in `#34D399`, prompts `#94A3B8`, rest `#F2F4F8`. Static text, no typing animation. `aria-label` describing it as \"terminal transcript showing a direct push blocked and a reviewed PR shipping through CI\".\n\n**Problem section (\"signals\").** Eyebrow `01 — WHERE YOU PROBABLY ARE`. Opens with the Fraunces h2 \"Your product is real. Your release process is you.\" Six signal items as a 2-col (lg) / 1-col grid of borderless list rows: each a 2px accent square marker, Inter 600 16px title, one-line muted description. No cards here — keep it a memo list, contrast with the offer cards below.\n\n**Offer / deliverables cards.** Eyebrow `02 — WHAT WE INSTALL`. 3-up (lg) / 1-up grid, `max-w-5xl`. Card: surface bg, 1px border, `rounded-lg`, `p-6`, no shadow. Each leads with a mono line `[x] branch protection` in accent (Plex Mono 500 13px, the `[x]` wrapped in `aria-hidden=\"true\"`), then Fraunces 500 20px title, then Inter 15px muted description. Hover (non-interactive cards): none.\n\n**Process timeline (`#plan`).** Eyebrow `03 — THE PLAN`. Horizontal 4-step rail on desktop, vertical on mobile. Step numbers in IBM Plex Mono inside 32px circles: 1px border, surface bg; 1px connecting line in border color. Steps: Diagnostic week → Phase 1 → Phases 2–3 → Handoff. Under Handoff, the closing state is a typographic headline moment — \"You operate everything. We leave.\" set in Fraunces 500, primary text (never muted), one step larger than the other step titles.\n\n**Why us / team.** Eyebrow `04 — WHO SHOWS UP`. Prose block `max-w-[68ch]`, no headshots, no avatars. One small currentColor schematic beside/below it (dev → staging → prod with a PR gate) if space allows.\n\n**FAQ.** Eyebrow `05 — QUESTIONS FOUNDERS ASK`. Native `<details>/<summary>` elements — no JS accordion. Summary in Inter 600 17px text, 44px min height, hairline `border-b` per item; answer Inter 16px muted, `max-w-[68ch]`.\n\n**Final CTA band.** No inverted color block — stay on page bg, hairline top border, `py-24`. Fraunces h2, one short muted subhead, single primary button, and under it a plain text link: `cal.com/pengbo/30min` in mono 14px muted. This is the only other primary button on the page besides nav/hero (one per viewport holds).\n\n**Footer.** Hairline top border, `py-10`, single row (stacked mobile): \"Pengbo IO LLC\" Inter 500 15px, muted tagline, links (Book a call, Email) underlined muted. No logo walls, no client names, no social icon set.\n\n**Buttons.** Primary: accent bg, accent-contrast text, `rounded-md`, `px-6 py-3`, Inter 500 15px, no gradient/shadow; hover accent-hover; `focus-visible` 2px accent ring, 2px offset in current bg. Secondary: transparent, 1px border-color border, text-color label; hover surface bg. Never more than one primary visible per viewport.\n\n## Accessibility rules (non-negotiable)\n- All token pairs above are verified ≥ 4.5:1 (actual values annotated; keep annotations in code).\n- All mono prefixes/glyph decorations (`[x]`, `✓`, `✗`, `$`, `●`) wrapped in `aria-hidden=\"true\"` with meaning carried by the visible words.\n- Diagrams in currentColor with `<title>` descriptions; focus rings visible in both modes; `prefers-color-scheme` only, no theme-toggle JS.",
+      "siteCopy": "# Pengbo IO — Landing Page Copy (Final)\n\n## NAV\n- Wordmark: **Pengbo IO**\n- Links: The problem · What we install · The plan · FAQ\n- Button: **Book intro call**\n\n## HERO\n**Eyebrow:** SDLC HARNESS — FOR FOUNDER-BUILT PRODUCTS\n\n**Headline:** You shipped fast. We make it safe to keep shipping fast.\n\n**Subhead:** You built a real product at founder speed — straight from main to prod, releases living in your head. We install the SDLC Harness around what you already have: staging, PR-gated merges with AI plus human review, CI, real tests, migration sync, and a rollback runbook you've actually rehearsed. One diagnostic week, a fixed-scope build of about twelve weeks, then your team runs all of it without us.\n\n**Primary CTA:** Book a 30-minute intro call\n**Secondary CTA:** See the 12-week plan\n\n**Stat strip (mono):** 3 envs · 12 weeks · 1 drill · 0 retainers\n\n**Terminal card content:** (see design brief — rejected direct push, AI + human review, CI, RLS tests, staging → smoke → prod)\n\n## PROBLEM\n**Heading:** Your product is real. Your release process is you.\n\n**Intro line:** Shipping straight to prod was the correct tradeoff — it's how you got here. But somewhere along the way the product started carrying revenue, and the process didn't change. If most of these sound familiar, you're exactly who we built this for:\n\n1. **Every deploy goes straight to prod.** There's no staging environment, so the first place new code meets real users is production.\n2. **main is the only branch that matters.** Nothing stops a direct push, and nothing reviews a change before it ships.\n3. **The test suite is you, clicking around.** No unit tests, no integration tests, and nothing verifying one tenant can't read another tenant's data.\n4. **Releases live in your head.** What's safe to ship, in what order, and what to do when it breaks — none of it is written down.\n5. **Rollback is a theory.** You've never actually rehearsed recovering from a bad deploy, so the first drill will be a real incident.\n6. **Schema changes are hand-run.** The database and the code drift apart because migrations aren't versioned or synced with deploys.\n\n**Closing line:** None of this means you built it wrong. It means the product outgrew the process — and the fix is installation, not a rewrite.\n\n## OFFER / DELIVERABLES\n**Heading:** What we install: the SDLC Harness\n\n**Intro:** Fixed scope, built around your existing codebase — not a replatform, not a rewrite. Every item below is something your team operates after we leave.\n\n1. **[x] Environment separation** — Real dev, staging, and prod environments, so code meets a safe copy of production before it meets your users.\n2. **[x] Branch protection + PR-only merges** — Direct pushes to main get rejected. Every change ships through a pull request with one AI review and one human review.\n3. **[x] CI gates** — Typecheck, lint, and build run on every PR. Broken code can't merge, which means you stop finding out in prod.\n4. **[x] Automated testing** — Unit, integration, and functional-flow tests — plus tenant-isolation (RLS) tests that prove one customer can never see another's data.\n5. **[x] Schema + migration sync** — Database migrations are versioned, reviewed, and deployed in lockstep with app and function code. No more hand-run SQL.\n6. **[x] Release + rollback runbooks** — Written procedures for shipping and un-shipping, capped with a witnessed recovery drill: we break a deploy on purpose and you roll it back, with us in the room.\n7. **[x] Smoke tests + feature flags** — Post-deploy smoke checks catch bad releases in minutes, and flags let you ship risky changes dark and turn them on when you choose.\n8. **[x] Observability + analytics hygiene** — Errors, logs, and product analytics wired so you learn about problems from dashboards, not from customers.\n\n## PROCESS\n**Heading:** The plan: one week to diagnose, twelve to install, then we leave\n\n**Phase 1 — Diagnostic week (paid).** We read your codebase, map your deploy path end to end, and pressure-test where a bad release actually hurts you. You get a written findings report and a fixed-scope, phased plan — useful even if you never hire us for the build.\n\n**Phase 2 — Foundations (weeks 1–4).** Environment separation, branch protection, PR flow with AI + human review, and CI. The riskiest gaps close first, and your daily shipping rhythm doesn't stop while we work.\n\n**Phase 3 — Test depth + release safety (weeks 5–12).** The test suite grows around your real flows — unit, integration, tenant isolation. Migration sync, coordinated deploys, feature flags, smoke tests, observability, and the runbooks, finishing with the witnessed recovery drill: you roll back a broken release yourself, on purpose, before it ever happens for real.\n\n**Phase 4 — Handoff.**\n**You operate everything. We leave.**\nEvery runbook is written for your team, every gate is yours to tune, and nothing depends on us being on retainer. That's the design goal from day one.\n\n## WHY US / TEAM\n**Heading:** Who shows up\n\n**Body:** Pengbo IO is a small senior team — two senior engineers and a senior architect, led by Pengbo Ma. No account managers, no juniors learning on your codebase, no bench. The people on the intro call are the people in your repo.\n\nWe specialize in exactly one thing: taking products that were built at founder speed — often AI-accelerated — and making them production-grade without slowing them down. That means we don't arrive with a framework migration or a rewrite pitch. We arrive with a harness that fits the codebase you already have, and every gate we install is judged by one standard: does it catch real failures without taxing your ability to ship today, twice a day, whenever you want.\n\nThe engagement is fixed-scope on purpose. No hourly meters, no scope creep, no incentive for us to stay. The measure of success is the day you don't need us.\n\n## FAQ\n**Heading:** Questions founders ask\n\n**Q: Won't all this process slow me down?**\nA: The harness is designed to preserve founder speed, not bureaucratize it. CI runs in minutes, AI review is instant, and human review is scoped to catch real risk — not style debates. What actually slows founders down is a production incident with no staging, no tests, and no rollback plan. You'll ship at the same pace, with a floor under you.\n\n**Q: Can I keep shipping during the engagement?**\nA: Yes — that's a hard requirement of how we phase the work. We install around your live development, not instead of it. Branch protection and CI go in without freezing your roadmap, and you keep deploying throughout all twelve weeks.\n\n**Q: What do you need from me?**\nA: Repo access, deploy credentials, and a few hours a week — mostly reviewing PRs with us and being present for the recovery drill. The diagnostic week needs one deep conversation about how you ship today. We do the installation; you stay the expert on your product.\n\n**Q: What happens after you leave?**\nA: You run everything. Runbooks are written for your team, gates are documented and tunable, and the recovery drill means you've already rehearsed the worst day. There's no retainer and no dependency on us — if you ever want a check-in later, that's your call, not a subscription.\n\n**Q: Why not just hire a full-time senior engineer?**\nA: You probably should — eventually. But a great hire takes months to find and months to ramp, and one engineer building CI, test infrastructure, migration tooling, and runbooks alone is a year of work. We install the whole harness in about twelve weeks with three senior people, then hand it off. Your future hire walks into a codebase with guardrails already in place — which also makes them easier to recruit.\n\n## FINAL CTA\n**Heading:** Make production boring.\n\n**Subhead:** A 30-minute call. We'll ask how you ship today, tell you honestly whether the diagnostic week is worth your money, and you'll leave with at least one thing to fix either way.\n\n**Button:** Book a 30-minute intro call\n**Text link below button (mono):** cal.com/pengbo/30min\n\n## FOOTER\n**Line:** Pengbo IO LLC — production readiness for founder-built products.\n**Links:** Book a call (https://cal.com/pengbo/30min) · Email"
+    }
+  }
+]

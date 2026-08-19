@@ -1,0 +1,43 @@
+[
+  {
+    "type": "result",
+    "key": "v2:08dd21070b5cf213a0356e61cd4b4eec1f589a58bd5788d2a98dadc1dd864e88",
+    "agentId": "aa51079d7efa84c59",
+    "result": {
+      "name": "Memo Seal",
+      "rationale": "A warm-paper rounded square with a navy keyline, \"PBM\" in bold system mono, and a single green underline cursor beneath — a wax seal reimagined as a terminal prompt. Only 3 elements: at 16px the chunky 5.5px mono caps stay readable, the 3px-equivalent border holds the silhouette, and the green cursor survives as a clear 4x1px blink of brand color.",
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\" role=\"img\" aria-label=\"Pengbo IO monogram\"><rect x=\"2.5\" y=\"2.5\" width=\"59\" height=\"59\" rx=\"14\" fill=\"#FAF9F6\" stroke=\"#1F3A5F\" stroke-width=\"3\"/><text x=\"32\" y=\"35\" text-anchor=\"middle\" font-family=\"ui-monospace, Menlo, Consolas, monospace\" font-weight=\"700\" font-size=\"22\" fill=\"#1F3A5F\">PBM</text><rect x=\"24\" y=\"41.5\" width=\"16\" height=\"4.5\" rx=\"2.25\" fill=\"#34D399\"/></svg>"
+    }
+  },
+  {
+    "type": "result",
+    "key": "v2:3cc55d653ca91cde165ede87c41d4f99e3b2a26044cb331806d9ed95365a6c8a",
+    "agentId": "a584a0414b46ce481",
+    "result": {
+      "name": "Prompt Tile",
+      "rationale": "The site's terminal card shrunk into an app-icon squircle: dark tile, a whisper of window dots (third one success-green), and a left-aligned prompt line \"pbm\" ending in a chunky green block cursor. At 16px the detail budget is exactly four things — dark rounded silhouette, dot row, white mono blob, green square — so nothing vanishes; the green cursor stays a readable accent, and at 24px in the nav it reads as a live prompt waiting next to \"Pengbo IO\".",
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\" role=\"img\" aria-label=\"Pengbo IO monogram\"><rect x=\"2\" y=\"2\" width=\"60\" height=\"60\" rx=\"14\" fill=\"#14171F\"/><circle cx=\"13\" cy=\"13\" r=\"2.5\" fill=\"#FAF9F6\"/><circle cx=\"21\" cy=\"13\" r=\"2.5\" fill=\"#FAF9F6\"/><circle cx=\"29\" cy=\"13\" r=\"2.5\" fill=\"#34D399\"/><text x=\"6.5\" y=\"43\" font-family=\"ui-monospace, Menlo, Consolas, monospace\" font-weight=\"700\" font-size=\"22\" fill=\"#FAF9F6\">pbm</text><rect x=\"48\" y=\"28.5\" width=\"10\" height=\"19\" rx=\"1.5\" fill=\"#34D399\"/></svg>"
+    }
+  },
+  {
+    "type": "result",
+    "key": "v2:5f45fdb28c0272f0e6ed97ec4825dee5fbd36d14bb573ab9e0b9d437962a45e5",
+    "agentId": "aac987e2fc6f79fd8",
+    "result": {
+      "name": "Bowl Light",
+      "rationale": "One chunky rounded letterform holds all three initials: stem + top bowl is the P, both bowls make the B, and tipped 90° the two bumps read as a lowercase m. It sits on the site's signature dark terminal card with a green \"status ok\" dot glowing in the lower counter — at 16px that's a 2px stroke, two open counters, and one green pixel-dot, all of which survive rasterization because there are only three shapes and no fine detail.",
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\" width=\"64\" height=\"64\" role=\"img\" aria-label=\"Pengbo IO monogram\">\n  <rect x=\"3\" y=\"3\" width=\"58\" height=\"58\" rx=\"15\" fill=\"#14171F\"/>\n  <circle cx=\"32\" cy=\"40\" r=\"4.5\" fill=\"#34D399\"/>\n  <path d=\"M24 15v34M24 15h7a8 8 0 0 1 0 16h-7M24 31h8a9 9 0 0 1 0 18h-8\" fill=\"none\" stroke=\"#FAF9F6\" stroke-width=\"8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+    }
+  },
+  {
+    "type": "result",
+    "key": "v2:c6e5179644dbda34b46d8f7aaf10fc11f3bcd2a7720464c253a6e61effaa9784",
+    "agentId": "a32c1bb4d7dce8dd7",
+    "result": {
+      "winner": "Bowl Light",
+      "why": "Judged at a true 16x16 rasterization (1x headless-Chrome render, pixel-zoomed), Bowl Light is the only candidate whose mark actually survives: Prompt Tile's 5.5px \"pbm\" collapses into a white smear with sub-pixel window dots, and Memo Seal's \"PBM\" turns to mush while its 0.75px keyline fades into light tab bars. Bowl Light is three shapes — dark squircle, chunky 2px-equivalent white letterform with two open counters, green status dot — and every one reads crisply on both light and dark tab bars. It is also the cutest: a plump rounded letter with a green belly dot, charming without being corporate. As a bonus it is the only text-free candidate, so it renders identically on every platform instead of depending on whatever system mono font the OS substitutes. At 24px in the nav it sits confidently next to \"Pengbo IO\" as the dark terminal-card tile the site already uses.",
+      "finalSvg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\" role=\"img\" aria-label=\"Pengbo IO monogram\"><rect x=\"2\" y=\"2\" width=\"60\" height=\"60\" rx=\"14\" fill=\"#14171F\"/><circle cx=\"32.5\" cy=\"40\" r=\"4.5\" fill=\"#34D399\"/><path d=\"M24 15v34M24 15h7a8 8 0 0 1 0 16h-7M24 31h8a9 9 0 0 1 0 18h-8\" fill=\"none\" stroke=\"#FAF9F6\" stroke-width=\"8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>",
+      "navSvgNote": "No changes needed at 24px — the letterform and green dot both verified crisp next to the wordmark; just leave ~10px of gap between the tile and \"Pengbo IO\"."
+    }
+  }
+]
