@@ -10,7 +10,7 @@
 
 **Headline:** You shipped fast. We make it safe to keep shipping fast.
 
-**Subhead:** You've been getting away with straight-to-prod. Before the luck runs out, we wrap your codebase in staging, CI, real tests, and a rollback you've actually rehearsed — twelve weeks, fixed scope, then it's yours.
+**Subhead:** One bad update shouldn't sink the ship. We give your product a safety net — a practice stage, automatic checks, and an undo button for production. Twelve weeks, then you keep the keys.
 
 **Primary CTA:** Book a 30-minute intro call
 **Secondary CTA:** See the 12-week plan
