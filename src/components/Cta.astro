@@ -1,24 +1,45 @@
 ---
 import Eyebrow from './Eyebrow.astro';
-import { CAL_LINK } from '../consts';
+import ContactForm from './ContactForm.astro';
+import { CAL_LINK, EMAIL } from '../consts';
 ---
 
 <section id="book" class="border-t border-border">
   <div class="mx-auto max-w-5xl px-6 py-24">
-    <Eyebrow text="06 — Book a call" />
-    <h2 class="mt-6 font-display text-3xl [font-weight:500] md:text-4xl">Make production boring.</h2>
-    <p class="mt-4 max-w-[60ch] text-lg leading-relaxed text-muted">
-      A 30-minute call. We'll ask how you ship today, tell you honestly whether the diagnostic week
-      is worth your money, and you'll leave with at least one thing to fix either way.
-    </p>
-    <div class="mt-8">
-      <a href={CAL_LINK} class="btn-primary">Book a 30-minute intro call</a>
+    <Eyebrow text="06 — Get in touch" />
+    <div class="mt-6 grid gap-16 lg:grid-cols-2">
+      <div>
+        <h2 class="font-display text-3xl [font-weight:500] md:text-4xl">Make production boring.</h2>
+        <p class="mt-4 max-w-[60ch] text-lg leading-relaxed text-muted">
+          A 30-minute call. We'll ask how you ship today, tell you honestly whether the diagnostic
+          week is worth your money, and you'll leave with at least one thing to fix either way.
+        </p>
+        <div class="mt-8">
+          <a href={CAL_LINK} class="btn-primary">Book a 30-minute intro call</a>
+        </div>
+        <a
+          href={CAL_LINK}
+          class="mt-4 inline-block font-mono text-sm text-muted underline decoration-1 underline-offset-4 transition-colors duration-150 hover:text-text"
+        >
+          cal.com/pengbo/30min
+        </a>
+      </div>
+      <div>
+        <h3 class="font-display text-xl [font-weight:500]">Or write to us</h3>
+        <p class="mt-2 text-[15px] leading-relaxed text-muted">
+          A few sentences is plenty — we reply to everything, usually within a day.
+        </p>
+        <div class="mt-6">
+          <ContactForm />
+        </div>
+        <p class="mt-6 font-mono text-sm text-muted">
+          or email directly: <a
+            href={`mailto:${EMAIL}`}
+            class="underline decoration-1 underline-offset-4 transition-colors duration-150 hover:text-text"
+            >{EMAIL}</a
+          >
+        </p>
+      </div>
     </div>
-    <a
-      href={CAL_LINK}
-      class="mt-4 inline-block font-mono text-sm text-muted underline decoration-1 underline-offset-4 transition-colors duration-150 hover:text-text"
-    >
-      cal.com/pengbo/30min
-    </a>
   </div>
 </section>

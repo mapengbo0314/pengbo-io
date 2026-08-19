@@ -38,14 +38,14 @@
 
 **Intro:** Fixed scope, built around your existing codebase — not a replatform, not a rewrite. Every item below is something your team owns and operates from day one of the handoff.
 
-1. **[x] Environment separation** — Real dev, staging, and prod environments, so code meets a safe copy of production before it meets your users.
-2. **[x] Branch protection + PR-only merges** — Direct pushes to main get rejected. Every change ships through a pull request with one AI review and one human review.
-3. **[x] CI gates** — Typecheck, lint, and build run on every PR. Broken code can't merge, which means you stop finding out in prod.
-4. **[x] Automated testing** — Unit, integration, and functional-flow tests — plus tenant-isolation (RLS) tests that prove one customer can never see another's data.
-5. **[x] Schema + migration sync** — Database migrations are versioned, reviewed, and deployed in lockstep with app and function code. No more hand-run SQL.
-6. **[x] Release + rollback runbooks** — Written procedures for shipping and un-shipping, capped with a witnessed recovery drill: we break a deploy on purpose and you roll it back, with us in the room.
-7. **[x] Smoke tests + feature flags** — Post-deploy smoke checks catch bad releases in minutes, and flags let you ship risky changes dark and turn them on when you choose.
-8. **[x] Observability + analytics hygiene** — Errors, logs, and product analytics wired so you learn about problems from dashboards, not from customers.
+1. 🎭 **[x] Environment separation** — Real dev, staging, and prod environments, so code meets a safe copy of production before it meets your users.
+2. 🛡️ **[x] Branch protection + PR-only merges** — Direct pushes to main get rejected. Every change ships through a pull request with one AI review and one human review.
+3. 🚦 **[x] CI gates** — Typecheck, lint, and build run on every PR. Broken code can't merge, which means you stop finding out in prod.
+4. 🧪 **[x] Automated testing** — Unit, integration, and functional-flow tests — plus tenant-isolation (RLS) tests that prove one customer can never see another's data.
+5. 🗄️ **[x] Schema + migration sync** — Database migrations are versioned, reviewed, and deployed in lockstep with app and function code. No more hand-run SQL.
+6. ⏪ **[x] Release + rollback runbooks** — Written procedures for shipping and un-shipping, capped with a witnessed recovery drill: we break a deploy on purpose and you roll it back, with us in the room.
+7. 🚩 **[x] Smoke tests + feature flags** — Post-deploy smoke checks catch bad releases in minutes, and flags let you ship risky changes dark and turn them on when you choose.
+8. 🔭 **[x] Observability + analytics hygiene** — Errors, logs, and product analytics wired so you learn about problems from dashboards, not from customers.
 
 ## PROCESS
 **Heading:** The plan: diagnose, install, hand off
