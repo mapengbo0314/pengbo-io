@@ -10,7 +10,7 @@
 
 **Headline:** You shipped fast. We make it safe to keep shipping fast.
 
-**Subhead:** One bad update shouldn't sink the ship. We give your product a safety net — a practice stage, automatic checks, and an undo button for production. Twelve weeks, then you keep the keys.
+**Subhead:** From late-night build to paying customers — your app grew up fast. We build the real application underneath it: a practice stage, automatic checks, and an undo button for production. Twelve weeks, then you keep the keys.
 
 **Primary CTA:** Book a 30-minute intro call
 **Secondary CTA:** See the 12-week plan
