@@ -3,17 +3,19 @@ import Wordmark from './Wordmark.astro';
 import { CAL_LINK } from '../consts';
 
 const links = [
-  ['#problem', 'The problem'],
-  ['#offer', 'What we install'],
-  ['#plan', 'The plan'],
-  ['#faq', 'FAQ'],
+  ['/#problem', 'The problem'],
+  ['/#offer', 'What we install'],
+  ['/#plan', 'The plan'],
+  ['/#faq', 'FAQ'],
+  ['/contact', 'Contact'],
 ];
 ---
 
 <header class="border-b border-border">
   <nav class="mx-auto flex h-16 max-w-5xl items-center justify-between px-6">
-    <a href="/" aria-label="Pengbo IO — home" class="flex items-center">
+    <a href="/" class="flex items-center gap-3">
       <Wordmark class="h-5 w-auto" />
+      <span class="font-display text-xl [font-weight:500]">Pengbo IO</span>
     </a>
     <div class="flex items-center gap-8">
       <div class="hidden items-center gap-8 md:flex">

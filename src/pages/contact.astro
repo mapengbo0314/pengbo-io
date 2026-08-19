@@ -1,0 +1,66 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+import Eyebrow from '../components/Eyebrow.astro';
+import { CAL_LINK, EMAIL } from '../consts';
+
+const inputClass =
+  'w-full rounded-md border border-border bg-surface px-4 py-3 text-[15px] placeholder:text-muted focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent';
+---
+
+<Layout title="Contact — Pengbo IO">
+  <Nav />
+  <main class="mx-auto max-w-5xl px-6 py-24">
+    <Eyebrow text="Contact" />
+    <h1 class="mt-6 font-display text-4xl [font-weight:500] md:text-5xl">Tell us how you ship.</h1>
+    <p class="mt-6 max-w-[60ch] text-lg leading-relaxed text-muted">
+      A few sentences about your product and how deploys work today is plenty. We reply to
+      everything — usually within a day. Prefer talking? <a
+        href={CAL_LINK}
+        class="underline decoration-1 underline-offset-4 transition-colors duration-150 hover:text-text"
+        >Book a 30-minute call</a
+      > instead.
+    </p>
+
+    {/* ponytail: FormSubmit — static-site form relay to EMAIL, no backend to run */}
+    <form
+      action={`https://formsubmit.co/${EMAIL}`}
+      method="POST"
+      class="mt-12 max-w-[60ch] space-y-6"
+    >
+      <input type="hidden" name="_subject" value="pengbo-io.com — new contact" />
+      <input type="hidden" name="_next" value="https://pengbo-io.com/thanks" />
+      <input type="hidden" name="_captcha" value="false" />
+      <input type="text" name="_honey" class="hidden" tabindex="-1" autocomplete="off" />
+
+      <div>
+        <label for="name" class="text-sm font-medium">Name</label>
+        <input id="name" name="name" type="text" required class={`mt-2 ${inputClass}`} />
+      </div>
+      <div>
+        <label for="email" class="text-sm font-medium">Email</label>
+        <input id="email" name="email" type="email" required class={`mt-2 ${inputClass}`} />
+      </div>
+      <div>
+        <label for="product" class="text-sm font-medium">Product URL <span class="font-normal text-muted">(optional)</span></label>
+        <input id="product" name="product" type="url" placeholder="https://" class={`mt-2 ${inputClass}`} />
+      </div>
+      <div>
+        <label for="message" class="text-sm font-medium">What's going on?</label>
+        <textarea id="message" name="message" rows="6" required class={`mt-2 ${inputClass}`}
+          placeholder="What you built, how you deploy today, and what worries you."></textarea>
+      </div>
+      <button type="submit" class="btn-primary">Send message</button>
+    </form>
+
+    <p class="mt-10 font-mono text-sm text-muted">
+      or email directly: <a
+        href={`mailto:${EMAIL}`}
+        class="underline decoration-1 underline-offset-4 transition-colors duration-150 hover:text-text"
+        >{EMAIL}</a
+      >
+    </p>
+  </main>
+  <Footer />
+</Layout>
