@@ -10,12 +10,12 @@
 
 **Headline:** You shipped fast. We make it safe to keep shipping fast.
 
-**Subhead:** Your app has outgrown solo speed, but a full engineering team is a year away. We're the layer in between — in twelve weeks we install the production system your product scales on, then hand you the keys.
+**Subhead:** Your app has outgrown solo speed, but a full engineering team is a year away. We're the layer in between — we install the production system your product scales on, then hand you the keys.
 
 **Primary CTA:** Book a 30-minute intro call
-**Secondary CTA:** See the 12-week plan
+**Secondary CTA:** See the plan
 
-**Stat strip (mono):** 3 envs · 12 weeks · 1 drill
+**Stat strip (mono):** 3 envs · 1 drill · 0 rewrites
 
 **Terminal card content:** (see design brief — rejected direct push, AI + human review, CI, RLS tests, staging → smoke → prod)
 
@@ -48,15 +48,15 @@
 8. **[x] Observability + analytics hygiene** — Errors, logs, and product analytics wired so you learn about problems from dashboards, not from customers.
 
 ## PROCESS
-**Heading:** The plan: one week to diagnose, twelve to install, then it's yours
+**Heading:** The plan: diagnose, install, hand off
 
 *(Section order: The plan now comes FIRST after the hero, before Problem and Offer.)*
 
-**Phase 1 — Diagnostic week.** We read your codebase, map your deploy path end to end, and pressure-test where a bad release actually hurts you. You get a written findings report and a fixed-scope, phased plan — useful even if you never hire us for the build.
+**Phase 1 — Diagnostic week.** We read your codebase, map your deploy path end to end, and pressure-test where a bad release actually hurts you. You get a written findings report and a fixed-scope, phased plan sized to your product and pace — useful even if you never hire us for the build.
 
-**Phase 2 — Foundations (weeks 1–4).** Environment separation, branch protection, PR flow with AI + human review, and CI. The riskiest gaps close first, and your daily shipping rhythm doesn't stop while we work.
+**Phase 2 — Foundations.** Environment separation, branch protection, PR flow with AI + human review, and CI. The riskiest gaps close first, and your daily shipping rhythm doesn't stop while we work.
 
-**Phase 3 — Test depth + release safety (weeks 5–12).** The test suite grows around your real flows — unit, integration, tenant isolation. Migration sync, coordinated deploys, feature flags, smoke tests, observability, and the runbooks, finishing with the witnessed recovery drill: you roll back a broken release yourself, on purpose, before it ever happens for real.
+**Phase 3 — Test depth + release safety.** The test suite grows around your real flows — unit, integration, tenant isolation. Migration sync, coordinated deploys, feature flags, smoke tests, observability, and the runbooks, finishing with the witnessed recovery drill: you roll back a broken release yourself, on purpose, before it ever happens for real.
 
 **Phase 4 — Handoff.**
 **You operate everything. We stay only if you want us.**
@@ -65,7 +65,7 @@ Every runbook is written for your team and every gate is yours to tune — no de
 ## WHY US / TEAM
 **Heading:** Who shows up
 
-**Body:** Pengbo IO is a small senior team — two senior engineers and a senior architect, led by Pengbo Ma. No account managers, no juniors learning on your codebase, no bench. The people on the intro call are the people in your repo.
+**Body:** Pengbo IO is groups of senior engineers and architects, led by Pengbo Ma — sized to fit your engagement. No account managers, no juniors learning on your codebase. The people on the intro call are the people in your repo.
 
 We specialize in exactly one thing: taking products that were built at founder speed — often AI-accelerated — and making them production-grade without slowing them down. That means we don't arrive with a framework migration or a rewrite pitch. We arrive with a harness that fits the codebase you already have, and every gate we install is judged by one standard: does it catch real failures without taxing your ability to ship today, twice a day, whenever you want.
 
@@ -78,14 +78,14 @@ The engagement is fixed-scope on purpose — no hourly meters, no scope creep. S
 A: The harness is designed to preserve founder speed, not bureaucratize it. CI runs in minutes, AI review is instant, and human review is scoped to catch real risk — not style debates. What actually slows founders down is a production incident with no staging, no tests, and no rollback plan. You'll ship at the same pace, with a floor under you.
 
 **Q: Can I keep shipping during the engagement?**
-A: Yes — that's a hard requirement of how we phase the work. We install around your live development, not instead of it. Branch protection and CI go in without freezing your roadmap, and you keep deploying throughout all twelve weeks.
+A: Yes — that's a hard requirement of how we phase the work. We install around your live development, not instead of it. Branch protection and CI go in without freezing your roadmap, and you keep deploying throughout the entire engagement.
 
 **Q: What do you need from me?**
 A: Repo access, deploy credentials, and a few hours a week — mostly reviewing PRs with us and being present for the recovery drill. The diagnostic week needs one deep conversation about how you ship today. We do the installation; you stay the expert on your product.
 
 
 **Q: Why not just hire a full-time senior engineer?**
-A: You probably should — eventually. But a great hire takes months to find and months to ramp, and one engineer building CI, test infrastructure, migration tooling, and runbooks alone is a year of work. We install the whole harness in about twelve weeks with three senior people, then hand it off. Your future hire walks into a codebase with guardrails already in place — which also makes them easier to recruit.
+A: You probably should — eventually. But a great hire takes months to find and months to ramp, and one engineer building CI, test infrastructure, migration tooling, and runbooks alone is a year of work. We install the whole harness in a fraction of that time with a group of senior engineers, then hand it off. Your future hire walks into a codebase with guardrails already in place — which also makes them easier to recruit.
 
 ## FINAL CTA
 **Heading:** Make production boring.
