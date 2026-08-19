@@ -3,26 +3,32 @@ import Eyebrow from './Eyebrow.astro';
 
 const signals = [
   {
+    emoji: '🚀',
     title: 'Every deploy goes straight to prod.',
     desc: 'There’s no staging environment, so the first place new code meets real users is production.',
   },
   {
+    emoji: '🌳',
     title: 'main is the only branch that matters.',
     desc: 'Nothing stops a direct push, and nothing reviews a change before it ships.',
   },
   {
+    emoji: '🖱️',
     title: 'The test suite is you, clicking around.',
     desc: 'No unit tests, no integration tests, and nothing verifying one tenant can’t read another tenant’s data.',
   },
   {
+    emoji: '🧠',
     title: 'Releases live in your head.',
     desc: 'What’s safe to ship, in what order, and what to do when it breaks — none of it is written down.',
   },
   {
+    emoji: '🧯',
     title: 'Rollback is a theory.',
     desc: 'You’ve never actually rehearsed recovering from a bad deploy, so the first drill will be a real incident.',
   },
   {
+    emoji: '✍️',
     title: 'Schema changes are hand-run.',
     desc: 'The database and the code drift apart because migrations aren’t versioned or synced with deploys.',
   },
@@ -31,7 +37,7 @@ const signals = [
 
 <section id="problem" class="border-t border-border">
   <div class="mx-auto max-w-5xl px-6 py-24 md:py-32">
-    <Eyebrow text="01 — Where you probably are" />
+    <Eyebrow text="02 — Where you probably are" />
     <h2 class="mt-6 font-display text-3xl [font-weight:500] md:text-4xl">
       Your product is real. Your release process is you.
     </h2>
@@ -42,9 +48,11 @@ const signals = [
     </p>
     <ul class="mt-12 grid gap-x-12 gap-y-8 lg:grid-cols-2">
       {
-        signals.map(({ title, desc }) => (
+        signals.map(({ emoji, title, desc }) => (
           <li class="flex gap-4">
-            <span class="mt-2 h-2 w-2 shrink-0 bg-accent" aria-hidden="true" />
+            <span class="mt-0.5 shrink-0 text-lg" aria-hidden="true">
+              {emoji}
+            </span>
             <div>
               <h3 class="font-semibold">{title}</h3>
               <p class="mt-1 text-[15px] leading-relaxed text-muted">{desc}</p>
