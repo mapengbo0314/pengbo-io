@@ -50,7 +50,7 @@
 ## PROCESS
 **Heading:** The plan: one week to diagnose, twelve to install, then we leave
 
-**Phase 1 — Diagnostic week (paid).** We read your codebase, map your deploy path end to end, and pressure-test where a bad release actually hurts you. You get a written findings report and a fixed-scope, phased plan — useful even if you never hire us for the build.
+**Phase 1 — Diagnostic week.** We read your codebase, map your deploy path end to end, and pressure-test where a bad release actually hurts you. You get a written findings report and a fixed-scope, phased plan — useful even if you never hire us for the build.
 
 **Phase 2 — Foundations (weeks 1–4).** Environment separation, branch protection, PR flow with AI + human review, and CI. The riskiest gaps close first, and your daily shipping rhythm doesn't stop while we work.
 
