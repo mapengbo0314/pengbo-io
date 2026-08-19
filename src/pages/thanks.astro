@@ -9,16 +9,39 @@ import { CAL_LINK } from '../consts';
 <Layout title="Message sent — Pengbo IO">
   <Nav />
   <main class="mx-auto max-w-5xl px-6 py-24">
-    <Eyebrow text="Sent" />
-    <h1 class="mt-6 font-display text-4xl [font-weight:500] md:text-5xl">
-      Got it. We'll reply within a day.
-    </h1>
-    <p class="mt-6 max-w-[60ch] text-lg leading-relaxed text-muted">
-      Want to skip the back-and-forth? Grab a slot now and we'll do the first conversation live.
-    </p>
-    <div class="mt-8">
-      <a href={CAL_LINK} class="btn-primary">Book a 30-minute intro call</a>
+    {/* shown only after a real form submission (?sent=1 from the form redirect) */}
+    <div id="sent" class="hidden">
+      <Eyebrow text="Sent" />
+      <h1 class="mt-6 font-display text-4xl [font-weight:500] md:text-5xl">
+        Got it. We'll get back to you as soon as possible.
+      </h1>
+      <p class="mt-6 max-w-[60ch] text-lg leading-relaxed text-muted">
+        Want to skip the back-and-forth? Grab a slot now and we'll do the first conversation live.
+      </p>
+      <div class="mt-8">
+        <a href={CAL_LINK} class="btn-primary">Book a 30-minute intro call</a>
+      </div>
+    </div>
+
+    {/* default for direct visits — no false confirmation */}
+    <div id="direct">
+      <Eyebrow text="Contact" />
+      <h1 class="mt-6 font-display text-4xl [font-weight:500] md:text-5xl">Looking to reach us?</h1>
+      <p class="mt-6 max-w-[60ch] text-lg leading-relaxed text-muted">
+        Send a message from the contact page, or grab a slot and talk to us directly.
+      </p>
+      <div class="mt-8 flex flex-wrap gap-4">
+        <a href={CAL_LINK} class="btn-primary">Book a 30-minute intro call</a>
+        <a href="/contact" class="btn-secondary">Send a message</a>
+      </div>
     </div>
   </main>
   <Footer />
+
+  <script>
+    if (new URLSearchParams(location.search).has('sent')) {
+      document.getElementById('sent')?.classList.remove('hidden');
+      document.getElementById('direct')?.classList.add('hidden');
+    }
+  </script>
 </Layout>
