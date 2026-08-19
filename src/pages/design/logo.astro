@@ -1,0 +1,42 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Eyebrow from '../../components/Eyebrow.astro';
+import Logo from '../../components/Logo.astro';
+---
+
+<Layout title="Logo — Pengbo IO design system">
+  <main class="mx-auto max-w-5xl space-y-16 px-6 py-16">
+    <section>
+      <Eyebrow text="Logo — PBM monogram (“Bowl Light”)" />
+      <p class="mt-2 max-w-[68ch] text-sm text-muted">
+        One chunky letterform holds all three initials: stem + top bowl is the P, both bowls make
+        the B, and the two bumps read as a lowercase m. Green status dot in the counter. Text-free —
+        renders identically on every platform. Colors are fixed (terminal tile), same in both modes.
+      </p>
+      <div class="mt-8 flex items-end gap-8">
+        <div><Logo class="h-16 w-16" /><p class="mt-2 font-mono text-xs text-muted">64</p></div>
+        <div><Logo class="h-8 w-8" /><p class="mt-2 font-mono text-xs text-muted">32</p></div>
+        <div><Logo class="h-6 w-6" /><p class="mt-2 font-mono text-xs text-muted">24 · nav</p></div>
+        <div><Logo class="h-4 w-4" /><p class="mt-2 font-mono text-xs text-muted">16 · favicon</p></div>
+      </div>
+      <div class="mt-10 flex items-center gap-2.5">
+        <Logo class="h-6 w-6" />
+        <span class="font-display text-xl [font-weight:500]">Pengbo IO</span>
+      </div>
+    </section>
+
+    <section>
+      <Eyebrow text="Considered — runners-up" />
+      <div class="mt-6 flex items-end gap-10">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" class="h-16 w-16" aria-hidden="true"><rect x="2" y="2" width="60" height="60" rx="14" fill="#14171F"></rect><circle cx="13" cy="13" r="2.5" fill="#FAF9F6"></circle><circle cx="21" cy="13" r="2.5" fill="#FAF9F6"></circle><circle cx="29" cy="13" r="2.5" fill="#34D399"></circle><text x="6.5" y="43" font-family="ui-monospace, Menlo, Consolas, monospace" font-weight="700" font-size="22" fill="#FAF9F6">pbm</text><rect x="48" y="28.5" width="10" height="19" rx="1.5" fill="#34D399"></rect></svg>
+          <p class="mt-2 font-mono text-xs text-muted">Prompt Tile — text mushed at 16px</p>
+        </div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" class="h-16 w-16" aria-hidden="true"><rect x="2.5" y="2.5" width="59" height="59" rx="14" fill="#FAF9F6" stroke="#1F3A5F" stroke-width="3"></rect><text x="32" y="35" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace" font-weight="700" font-size="22" fill="#1F3A5F">PBM</text><rect x="24" y="41.5" width="16" height="4.5" rx="2.25" fill="#34D399"></rect></svg>
+          <p class="mt-2 font-mono text-xs text-muted">Memo Seal — keyline fades on light tabs</p>
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>
