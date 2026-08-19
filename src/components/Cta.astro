@@ -9,51 +9,73 @@ const inputClass =
 <section id="book" class="border-t border-border">
   <div class="mx-auto max-w-5xl px-6 py-24">
     <Eyebrow text="06 — Get in touch" />
-    <h2 class="mt-6 font-display text-3xl [font-weight:500] md:text-4xl">Make production boring.</h2>
-    <p class="mt-4 max-w-[60ch] text-lg leading-relaxed text-muted">
-      A 30-minute call. We'll ask how you ship today, tell you honestly whether the diagnostic week
-      is worth your money, and you'll leave with at least one thing to fix either way.
-    </p>
-    <div class="mt-8">
-      <a href={CAL_LINK} class="btn-primary">Book a 30-minute intro call</a>
-    </div>
+    <div class="mt-6 grid gap-16 lg:grid-cols-2">
+      <div>
+        <h2 class="font-display text-3xl [font-weight:500] md:text-4xl">Make production boring.</h2>
+        <p class="mt-4 max-w-[60ch] text-lg leading-relaxed text-muted">
+          A 30-minute call. We'll ask how you ship today, tell you honestly whether the diagnostic
+          week is worth your money, and you'll leave with at least one thing to fix either way.
+        </p>
+        <div class="mt-8">
+          <a href={CAL_LINK} class="btn-primary">Book a 30-minute intro call</a>
+        </div>
+        <a
+          href={CAL_LINK}
+          class="mt-4 inline-block font-mono text-sm text-muted underline decoration-1 underline-offset-4 transition-colors duration-150 hover:text-text"
+        >
+          cal.com/pengbo/30min
+        </a>
+      </div>
 
-    {/* ponytail: quick two-field contact — the full form lives at /contact */}
-    <form
-      action={`https://formsubmit.co/${EMAIL}`}
-      method="POST"
-      class="mt-10 flex max-w-[68ch] flex-col gap-3 sm:flex-row"
-    >
-      <input type="hidden" name="_subject" value="pengbo-io.com — quick contact" />
-      <input type="hidden" name="_next" value="https://pengbo-io.com/thanks?sent=1" />
-      <input type="hidden" name="_captcha" value="false" />
-      <input type="text" name="_honey" class="hidden" tabindex="-1" autocomplete="off" />
-      <label class="sr-only" for="quick-email">Email</label>
-      <input
-        id="quick-email"
-        name="email"
-        type="email"
-        required
-        placeholder="you@company.com"
-        class={`${inputClass} sm:max-w-56`}
-      />
-      <label class="sr-only" for="quick-message">Message</label>
-      <input
-        id="quick-message"
-        name="message"
-        type="text"
-        required
-        placeholder="Or skip the call — what's going on?"
-        class={inputClass}
-      />
-      <button type="submit" class="btn-secondary shrink-0">Send</button>
-    </form>
-    <p class="mt-4 font-mono text-sm text-muted">
-      or email <a
-        href={`mailto:${EMAIL}`}
-        class="underline decoration-1 underline-offset-4 transition-colors duration-150 hover:text-text"
-        >{EMAIL}</a
-      >
-    </p>
+      <div>
+        <h3 class="font-display text-xl [font-weight:500]">Or skip the call — write to us</h3>
+        <p class="mt-2 text-[15px] leading-relaxed text-muted">
+          A few sentences about your product and how deploys work today is plenty. We read
+          everything and get back to you as soon as possible.
+        </p>
+        {/* ponytail: FormSubmit — static-site form relay to EMAIL, no backend to run */}
+        <form action={`https://formsubmit.co/${EMAIL}`} method="POST" class="mt-6 space-y-5">
+          <input type="hidden" name="_subject" value="pengbo-io.com — new contact" />
+          <input type="hidden" name="_next" value="https://pengbo-io.com/thanks?sent=1" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="text" name="_honey" class="hidden" tabindex="-1" autocomplete="off" />
+
+          <div class="grid gap-5 sm:grid-cols-2">
+            <div>
+              <label for="name" class="text-sm font-medium">Name</label>
+              <input id="name" name="name" type="text" required class={`mt-2 ${inputClass}`} />
+            </div>
+            <div>
+              <label for="email" class="text-sm font-medium">Email</label>
+              <input id="email" name="email" type="email" required class={`mt-2 ${inputClass}`} />
+            </div>
+          </div>
+          <div>
+            <label for="product" class="text-sm font-medium">
+              Product URL <span class="font-normal text-muted">(optional)</span>
+            </label>
+            <input id="product" name="product" type="url" placeholder="https://" class={`mt-2 ${inputClass}`} />
+          </div>
+          <div>
+            <label for="message" class="text-sm font-medium">What's going on?</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              required
+              class={`mt-2 ${inputClass}`}
+              placeholder="What you built, how you deploy today, and what worries you."></textarea>
+          </div>
+          <button type="submit" class="btn-secondary">Send message</button>
+        </form>
+        <p class="mt-5 font-mono text-sm text-muted">
+          or email <a
+            href={`mailto:${EMAIL}`}
+            class="underline decoration-1 underline-offset-4 transition-colors duration-150 hover:text-text"
+            >{EMAIL}</a
+          >
+        </p>
+      </div>
+    </div>
   </div>
 </section>
