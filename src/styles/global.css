@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+/*
+ * Design tokens — rationale in design/BRIEF.md.
+ * Contrast ratios are verified WCAG AA; keep the annotations when editing.
+ */
+:root {
+  --c-bg: #faf9f6;
+  --c-surface: #ffffff;
+  --c-text: #1a1a18; /* 16.55:1 on bg */
+  --c-muted: #5c5a55; /* 6.54:1 on bg, 6.89:1 on surface */
+  --c-accent: #1f3a5f; /* 10.91:1 on bg */
+  --c-accent-hover: #16293f;
+  --c-accent-contrast: #faf9f6; /* 10.91:1 on accent */
+  --c-border: #e4e1da; /* decorative only */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --c-bg: #161511;
+    --c-surface: #201f1a;
+    --c-text: #edeae3; /* 15.21:1 on bg */
+    --c-muted: #a5a198; /* 7.09:1 on bg, 6.41:1 on surface */
+    --c-accent: #a9c3e4; /* 10.1:1 on bg */
+    --c-accent-hover: #c2d5ec;
+    --c-accent-contrast: #161511; /* 10.1:1 on accent */
+    --c-border: #33322c;
+  }
+}
+
+@theme inline {
+  --color-bg: var(--c-bg);
+  --color-surface: var(--c-surface);
+  --color-text: var(--c-text);
+  --color-muted: var(--c-muted);
+  --color-accent: var(--c-accent);
+  --color-accent-hover: var(--c-accent-hover);
+  --color-accent-contrast: var(--c-accent-contrast);
+  --color-border: var(--c-border);
+}
+
+@theme {
+  /* Terminal card — identical in both modes */
+  --color-term-bg: #14171f;
+  --color-term-border: #262b36;
+  --color-term-text: #f2f4f8; /* 16.27:1 on term-bg */
+  --color-term-muted: #94a3b8; /* 6.99:1 on term-bg */
+  --color-term-green: #34d399; /* 9.32:1 on term-bg */
+  --color-term-red: #f87171; /* 7.0:1 on term-bg */
+
+  --font-display: "Fraunces", ui-serif, Georgia, serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-bg font-sans text-text antialiased;
+  }
+  ::selection {
+    background: color-mix(in srgb, var(--c-accent) 20%, transparent);
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-block rounded-md bg-accent px-6 py-3 text-[15px] font-medium text-accent-contrast transition-colors duration-150 hover:bg-accent-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent;
+  }
+  .btn-secondary {
+    @apply inline-block rounded-md border border-border px-6 py-3 text-[15px] font-medium transition-colors duration-150 hover:bg-surface focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent;
+  }
+}

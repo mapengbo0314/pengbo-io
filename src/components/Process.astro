@@ -1,0 +1,60 @@
+---
+import Eyebrow from './Eyebrow.astro';
+
+const steps = [
+  {
+    n: '01',
+    title: 'Diagnostic week (paid)',
+    desc: 'We read your codebase, map your deploy path end to end, and pressure-test where a bad release actually hurts you. You get a written findings report and a fixed-scope, phased plan — useful even if you never hire us for the build.',
+  },
+  {
+    n: '02',
+    title: 'Foundations · weeks 1–4',
+    desc: 'Environment separation, branch protection, PR flow with AI + human review, and CI. The riskiest gaps close first, and your daily shipping rhythm doesn’t stop while we work.',
+  },
+  {
+    n: '03',
+    title: 'Test depth + release safety · weeks 5–12',
+    desc: 'The test suite grows around your real flows — unit, integration, tenant isolation. Migration sync, coordinated deploys, feature flags, smoke tests, observability, and the runbooks, finishing with the witnessed recovery drill: you roll back a broken release yourself, on purpose, before it ever happens for real.',
+  },
+  {
+    n: '04',
+    title: 'Handoff',
+    desc: 'The harness is yours — documented, tunable, rehearsed.',
+  },
+];
+---
+
+<section id="plan" class="border-t border-border">
+  <div class="mx-auto max-w-5xl px-6 py-24 md:py-32">
+    <Eyebrow text="03 — The plan" />
+    <h2 class="mt-6 font-display text-3xl [font-weight:500] md:text-4xl">
+      The plan: one week to diagnose, twelve to install, then we leave
+    </h2>
+    <ol class="relative mt-12 grid gap-10 md:grid-cols-4 md:gap-8">
+      <div
+        class="absolute top-4 right-0 left-0 hidden border-t border-border md:block"
+        aria-hidden="true"
+      >
+      </div>
+      {
+        steps.map(({ n, title, desc }) => (
+          <li class="relative">
+            <span class="flex h-8 w-8 items-center justify-center rounded-full border border-border bg-surface font-mono text-sm">
+              {n}
+            </span>
+            <h3 class="mt-4 font-semibold">{title}</h3>
+            <p class="mt-2 text-[15px] leading-relaxed text-muted">{desc}</p>
+          </li>
+        ))
+      }
+    </ol>
+    <p class="mt-16 font-display text-2xl [font-weight:500] md:text-3xl">
+      You operate everything. We leave.
+    </p>
+    <p class="mt-4 max-w-[68ch] text-lg leading-relaxed text-muted">
+      Every runbook is written for your team, every gate is yours to tune, and nothing depends on us
+      being on retainer. That's the design goal from day one.
+    </p>
+  </div>
+</section>

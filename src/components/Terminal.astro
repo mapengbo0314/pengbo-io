@@ -1,0 +1,25 @@
+---
+// The proof artifact: identical in light and dark mode, deliberately static — no typing animation.
+---
+
+<figure
+  class="rounded-xl border border-term-border bg-term-bg p-5 font-mono text-[13px] leading-[1.8] text-term-text"
+  role="img"
+  aria-label="Terminal transcript showing a direct push to main blocked by branch protection, then a reviewed pull request passing AI and human review, CI, tests, and a staged deploy to production."
+>
+  <div class="mb-4 flex gap-2" aria-hidden="true">
+    <span class="h-2 w-2 rounded-full bg-term-muted/40"></span>
+    <span class="h-2 w-2 rounded-full bg-term-muted/40"></span>
+    <span class="h-2 w-2 rounded-full bg-term-muted/40"></span>
+  </div>
+  <pre
+    class="overflow-x-auto whitespace-pre"
+    aria-hidden="true"><code><span class="text-term-muted">$</span> git push origin main
+<span class="text-term-red">✗ blocked: PR required — branch protection on main</span>
+<span class="text-term-muted">$</span> gh pr create → #214 "checkout: retry failed webhooks"
+<span class="text-term-muted">●</span> ai-review   passed · 1 comment resolved
+<span class="text-term-muted">●</span> human-review approved — senior engineer
+<span class="text-term-green">✓</span> ci: typecheck · lint · build
+<span class="text-term-green">✓</span> tests: unit · integration · rls
+<span class="text-term-green">✓</span> deploy: staging → smoke → prod</code></pre>
+</figure>

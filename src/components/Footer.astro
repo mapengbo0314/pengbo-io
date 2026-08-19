@@ -1,0 +1,28 @@
+---
+import { CAL_LINK, EMAIL } from '../consts';
+---
+
+<footer class="border-t border-border">
+  <div
+    class="mx-auto flex max-w-5xl flex-col gap-4 px-6 py-10 text-[15px] sm:flex-row sm:items-center sm:justify-between"
+  >
+    <p>
+      <span class="font-medium">Pengbo IO LLC</span>
+      <span class="text-muted"> — production readiness for founder-built products.</span>
+    </p>
+    <div class="flex gap-6">
+      <a
+        href={CAL_LINK}
+        class="text-muted underline decoration-1 underline-offset-4 transition-colors duration-150 hover:text-text"
+      >
+        Book a call
+      </a>
+      <a
+        href={`mailto:${EMAIL}`}
+        class="text-muted underline decoration-1 underline-offset-4 transition-colors duration-150 hover:text-text"
+      >
+        Email
+      </a>
+    </div>
+  </div>
+</footer>

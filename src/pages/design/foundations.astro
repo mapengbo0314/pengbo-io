@@ -1,0 +1,95 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Eyebrow from '../../components/Eyebrow.astro';
+
+const colors = [
+  ['bg', 'bg-bg'],
+  ['surface', 'bg-surface'],
+  ['text', 'bg-text'],
+  ['muted', 'bg-muted'],
+  ['accent', 'bg-accent'],
+  ['accent-contrast', 'bg-accent-contrast'],
+  ['border', 'bg-border'],
+];
+const terminal = [
+  ['term-bg', 'bg-term-bg'],
+  ['term-text', 'bg-term-text'],
+  ['term-muted', 'bg-term-muted'],
+  ['term-green', 'bg-term-green'],
+  ['term-red', 'bg-term-red'],
+];
+---
+
+<Layout title="Foundations — Pengbo IO design system">
+  <main class="mx-auto max-w-5xl space-y-16 px-6 py-16">
+    <section>
+      <Eyebrow text="Tokens — color" />
+      <p class="mt-2 text-sm text-muted">
+        Light/dark via prefers-color-scheme. Ratios annotated in src/styles/global.css.
+      </p>
+      <div class="mt-6 grid grid-cols-3 gap-4 md:grid-cols-7">
+        {
+          colors.map(([name, cls]) => (
+            <div>
+              <div class={`h-16 rounded-md border border-border ${cls}`} />
+              <p class="mt-2 font-mono text-xs text-muted">{name}</p>
+            </div>
+          ))
+        }
+      </div>
+      <div class="mt-4 grid grid-cols-3 gap-4 md:grid-cols-7">
+        {
+          terminal.map(([name, cls]) => (
+            <div>
+              <div class={`h-16 rounded-md border border-term-border ${cls}`} />
+              <p class="mt-2 font-mono text-xs text-muted">{name}</p>
+            </div>
+          ))
+        }
+      </div>
+    </section>
+
+    <section>
+      <Eyebrow text="Tokens — type" />
+      <div class="mt-6 space-y-8">
+        <div>
+          <p class="font-mono text-xs text-muted">Fraunces 560 · h1 · text-5xl/7xl · 1.05</p>
+          <p class="mt-2 font-display text-5xl leading-[1.05] tracking-[-0.015em] [font-weight:560]">
+            Make production boring.
+          </p>
+        </div>
+        <div>
+          <p class="font-mono text-xs text-muted">Fraunces 500 · h2 · text-3xl/4xl</p>
+          <p class="mt-2 font-display text-3xl [font-weight:500]">
+            Your product is real. Your release process is you.
+          </p>
+        </div>
+        <div>
+          <p class="font-mono text-xs text-muted">Inter 400 · body · 18px/1.7 muted</p>
+          <p class="mt-2 max-w-[68ch] text-lg leading-relaxed text-muted">
+            We install the SDLC Harness around what you already have: staging, PR-gated merges with
+            AI plus human review, CI, real tests, migration sync, and a rollback runbook you've
+            actually rehearsed.
+          </p>
+        </div>
+        <div>
+          <p class="font-mono text-xs text-muted">IBM Plex Mono 500 · eyebrow · 13px</p>
+          <div class="mt-2">
+            <Eyebrow text="01 — Diagnostic week" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <Eyebrow text="Components — buttons" />
+      <div class="mt-6 flex flex-wrap items-center gap-4">
+        <a href="#" class="btn-primary">Book a 30-minute intro call</a>
+        <a href="#" class="btn-secondary">See the 12-week plan</a>
+      </div>
+      <p class="mt-4 text-sm text-muted">
+        One primary per viewport. No shadows, no gradients, 150ms transitions only.
+      </p>
+    </section>
+  </main>
+</Layout>

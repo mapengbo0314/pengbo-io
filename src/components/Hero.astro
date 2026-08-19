@@ -1,0 +1,29 @@
+---
+import Eyebrow from './Eyebrow.astro';
+import Terminal from './Terminal.astro';
+import { CAL_LINK } from '../consts';
+---
+
+<section class="mx-auto max-w-5xl px-6 pt-24 pb-16">
+  <Eyebrow text="SDLC Harness — for founder-built products" />
+  <h1
+    class="mt-6 font-display text-5xl leading-[1.05] tracking-[-0.015em] [font-weight:560] md:text-7xl"
+  >
+    You shipped fast. We make it safe to keep shipping fast.
+  </h1>
+  <p class="mt-8 max-w-[60ch] text-lg leading-relaxed text-muted md:text-xl">
+    You built a real product at founder speed — straight from main to prod, releases living in your
+    head. We install the SDLC Harness around what you already have: staging, PR-gated merges with AI
+    plus human review, CI, real tests, migration sync, and a rollback runbook you've actually
+    rehearsed. One diagnostic week, a fixed-scope build of about twelve weeks, then your team runs
+    all of it without us.
+  </p>
+  <div class="mt-10 flex flex-wrap items-center gap-4">
+    <a href={CAL_LINK} class="btn-primary">Book a 30-minute intro call</a>
+    <a href="#plan" class="btn-secondary">See the 12-week plan</a>
+  </div>
+  <p class="mt-8 font-mono text-sm text-muted">3 envs · 12 weeks · 1 drill · 0 retainers</p>
+  <div class="mt-16">
+    <Terminal />
+  </div>
+</section>

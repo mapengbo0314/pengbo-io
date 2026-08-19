@@ -1,0 +1,51 @@
+---
+import Eyebrow from './Eyebrow.astro';
+
+const faqs = [
+  {
+    q: 'Won’t all this process slow me down?',
+    a: 'The harness is designed to preserve founder speed, not bureaucratize it. CI runs in minutes, AI review is instant, and human review is scoped to catch real risk — not style debates. What actually slows founders down is a production incident with no staging, no tests, and no rollback plan. You’ll ship at the same pace, with a floor under you.',
+  },
+  {
+    q: 'Can I keep shipping during the engagement?',
+    a: 'Yes — that’s a hard requirement of how we phase the work. We install around your live development, not instead of it. Branch protection and CI go in without freezing your roadmap, and you keep deploying throughout all twelve weeks.',
+  },
+  {
+    q: 'What do you need from me?',
+    a: 'Repo access, deploy credentials, and a few hours a week — mostly reviewing PRs with us and being present for the recovery drill. The diagnostic week needs one deep conversation about how you ship today. We do the installation; you stay the expert on your product.',
+  },
+  {
+    q: 'What happens after you leave?',
+    a: 'You run everything. Runbooks are written for your team, gates are documented and tunable, and the recovery drill means you’ve already rehearsed the worst day. There’s no retainer and no dependency on us — if you ever want a check-in later, that’s your call, not a subscription.',
+  },
+  {
+    q: 'Why not just hire a full-time senior engineer?',
+    a: 'You probably should — eventually. But a great hire takes months to find and months to ramp, and one engineer building CI, test infrastructure, migration tooling, and runbooks alone is a year of work. We install the whole harness in about twelve weeks with three senior people, then hand it off. Your future hire walks into a codebase with guardrails already in place — which also makes them easier to recruit.',
+  },
+];
+---
+
+<section id="faq" class="border-t border-border">
+  <div class="mx-auto max-w-5xl px-6 py-24 md:py-32">
+    <Eyebrow text="05 — FAQ" />
+    <h2 class="mt-6 font-display text-3xl [font-weight:500] md:text-4xl">Questions founders ask</h2>
+    <div class="mt-10">
+      {
+        faqs.map(({ q, a }) => (
+          <details class="group border-b border-border">
+            <summary class="flex min-h-11 cursor-pointer list-none items-center justify-between gap-4 py-4 text-[17px] font-semibold [&::-webkit-details-marker]:hidden">
+              {q}
+              <span
+                class="text-muted transition-transform duration-150 group-open:rotate-45"
+                aria-hidden="true"
+              >
+                +
+              </span>
+            </summary>
+            <p class="max-w-[68ch] pb-5 leading-relaxed text-muted">{a}</p>
+          </details>
+        ))
+      }
+    </div>
+  </div>
+</section>

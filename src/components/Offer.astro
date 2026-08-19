@@ -1,0 +1,73 @@
+---
+import Eyebrow from './Eyebrow.astro';
+
+const items = [
+  {
+    slug: 'environments',
+    title: 'Environment separation',
+    desc: 'Real dev, staging, and prod environments, so code meets a safe copy of production before it meets your users.',
+  },
+  {
+    slug: 'branch protection',
+    title: 'Branch protection + PR-only merges',
+    desc: 'Direct pushes to main get rejected. Every change ships through a pull request with one AI review and one human review.',
+  },
+  {
+    slug: 'ci gates',
+    title: 'CI gates',
+    desc: 'Typecheck, lint, and build run on every PR. Broken code can’t merge, which means you stop finding out in prod.',
+  },
+  {
+    slug: 'tests',
+    title: 'Automated testing',
+    desc: 'Unit, integration, and functional-flow tests — plus tenant-isolation (RLS) tests that prove one customer can never see another’s data.',
+  },
+  {
+    slug: 'migrations',
+    title: 'Schema + migration sync',
+    desc: 'Database migrations are versioned, reviewed, and deployed in lockstep with app and function code. No more hand-run SQL.',
+  },
+  {
+    slug: 'runbooks',
+    title: 'Release + rollback runbooks',
+    desc: 'Written procedures for shipping and un-shipping, capped with a witnessed recovery drill: we break a deploy on purpose and you roll it back, with us in the room.',
+  },
+  {
+    slug: 'flags + smoke',
+    title: 'Smoke tests + feature flags',
+    desc: 'Post-deploy smoke checks catch bad releases in minutes, and flags let you ship risky changes dark and turn them on when you choose.',
+  },
+  {
+    slug: 'observability',
+    title: 'Observability + analytics hygiene',
+    desc: 'Errors, logs, and product analytics wired so you learn about problems from dashboards, not from customers.',
+  },
+];
+---
+
+<section id="offer" class="border-t border-border">
+  <div class="mx-auto max-w-5xl px-6 py-24 md:py-32">
+    <Eyebrow text="02 — What we install" />
+    <h2 class="mt-6 font-display text-3xl [font-weight:500] md:text-4xl">
+      What we install: the SDLC Harness
+    </h2>
+    <p class="mt-6 max-w-[68ch] text-lg leading-relaxed text-muted">
+      Fixed scope, built around your existing codebase — not a replatform, not a rewrite. Every item
+      below is something your team operates after we leave.
+    </p>
+    <ul class="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+      {
+        items.map(({ slug, title, desc }) => (
+          <li class="rounded-lg border border-border bg-surface p-6">
+            <p class="font-mono text-[13px] font-medium text-accent">
+              <span aria-hidden="true">[x] </span>
+              {slug}
+            </p>
+            <h3 class="mt-3 font-display text-xl [font-weight:500]">{title}</h3>
+            <p class="mt-2 text-[15px] leading-relaxed text-muted">{desc}</p>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</section>
