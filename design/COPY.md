@@ -10,7 +10,7 @@
 
 **Headline:** You shipped fast. We make it safe to keep shipping fast.
 
-**Subhead:** You built a real product at founder speed — straight from main to prod, releases living in your head. We install the SDLC Harness around what you already have: staging, PR-gated merges with AI plus human review, CI, real tests, migration sync, and a rollback runbook you've actually rehearsed. One diagnostic week, a fixed-scope build of about twelve weeks, then your team runs all of it without us.
+**Subhead:** You've been getting away with straight-to-prod. Before the luck runs out, we wrap your codebase in staging, CI, real tests, and a rollback you've actually rehearsed — twelve weeks, fixed scope, then it's yours.
 
 **Primary CTA:** Book a 30-minute intro call
 **Secondary CTA:** See the 12-week plan
